@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+:root {
+    --background: #E4EBF5; 
+    --violet1: #313fdb;
+    --violet2: #5865f2;
+    --white: #FFFFFF;
+    --grey: #c8d0e7;
+    --light-text: #909dbd;
+    --dark-text: #111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+   
+}
+
+body {
+    min-height: 100vh;
+    width: 99vw;
+    background-color: var(--background);
+    padding: 0vw 12vw;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 3vh;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
+}
+
+header h2 {
+    font-size: 2rem;
+    padding: 0vw 2vw;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav li {
+    padding: 0vw 2vw;
+}
+
+header nav li a {
+    color: var(--dark-text);
+    padding: 1.5vh 3vh;
+    border-radius: 5px;
+    transition: .4s;
+}
+header nav li a:hover {
+    box-shadow: inset -5px -5px 10px var(--white), inset 5px 5px 10px var(--grey);
+    transition: .4s;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 0vh;
+}
+
+#home section {
+    margin-right: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#home section #button {
+    padding: 10vh 0vh 0vh 0vh;
+}
+
+#home section #button a {
+    color: var(--dark-text);
+    padding: 1.5vh 5vh;
+    margin-right: 3vw;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+#home section #button a:nth-child(1) {
+    box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
+}
+
+#home section #button a:nth-child(1):hover {
+    box-shadow: 0px 0px 0px var(--white), 0px 0px 0px var(--grey);
+    transition: .4s;
+}
+
+#home section #button a:nth-child(2):hover {
+    box-shadow: inset -5px -5px 10px var(--white), inset 5px 5px 10px var(--grey);
+    transition: .4s;
+}
+
+#home section h1 {
+    margin: 5vh 0vh;
+    font-size: 10vh;
+}
+
+#home section p {
+    font-size: 2.5vh;
+    padding-right: 10vw;
+}
+
+#home img {
+    width: 20vw;
+}
+
+#cards-research {
+    display: block;
+}
+
+main .research {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 30vh;
+}
+
+main .research h1 {
+    font-size: 6vh;
+}
+
+main ul li img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+main ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main ul li {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
+    width: 13vw;
+    min-height: 20vh;
+    margin: 5vh 10vh;
+    transition: .4s;
+}
+
+main ul li:hover {
+    box-shadow: none;
+    transition: .4s;
+    cursor: pointer;
+}
+
+#cards-research #searchbar {
+    border: none;
+    background-color: var(--background);
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--violet1);
+    box-shadow: inset -5px -5px 10px var(--white), inset 5px 5px 10px var(--grey);
+}
+
+#cards-research #searchbar:focus {
+    outline: none;
+}
+
+#cards-research #searchbar:focus::placeholder {
+    color: var(--violet1);
+}
