@@ -165,7 +165,7 @@ main ul li:hover {
     background-color: var(--background);
     padding: 10px 15px;
     border-radius: 5px;
-    color: var(--violet1);
+    color: var(--violet2);
     box-shadow: inset -5px -5px 10px var(--white), inset 5px 5px 10px var(--grey);
 }
 
@@ -175,4 +175,69 @@ main ul li:hover {
 
 #cards-research #searchbar:focus::placeholder {
     color: var(--violet1);
+}
+
+#profil {
+    width: 100%;
+    min-height: 60vh;
+    margin-top: 10vh;
+    /* border-radius: 5px;
+    box-shadow: inset -5px -5px 10px var(--white), inset 5px 5px 10px var(--grey); */
+}
+
+#profil .user {
+    display: flex;
+    width: 100%;
+    min-height: 30vh;
+    /* background-color: green; */
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#profil .identity {
+    width: 50%;
+    min-height: 30vh;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#profil .identity img {
+    width: 13vw;
+}
+
+#profil .identity h2 {
+    font-size: 6vh;
+}
+
+#profil .pseudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    min-height: 30vh;
+    /* background-color: red; */
+    font-size: 2vw;
+}
+
+#profil .pseudo h1{
+    box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
+    border-radius: 10px;
+    color: var(--violet2);
+    padding: 2vh 4vw;
+}
+
+#profil .collection {
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profil .collection h2 {
+    text-transform: uppercase;
 }
