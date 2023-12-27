@@ -167,11 +167,9 @@ main ul li:hover {
     border-radius: 5px;
     color: var(--violet2);
     box-shadow: inset -5px -5px 10px var(--white), inset 5px 5px 10px var(--grey);
-}
-
-#cards-research #searchbar:focus {
     outline: none;
 }
+
 
 #cards-research #searchbar:focus::placeholder {
     color: var(--violet1);
@@ -181,8 +179,6 @@ main ul li:hover {
     width: 100%;
     min-height: 60vh;
     margin-top: 10vh;
-    /* border-radius: 5px;
-    box-shadow: inset -5px -5px 10px var(--white), inset 5px 5px 10px var(--grey); */
 }
 
 #profil .user {
@@ -240,4 +236,67 @@ main ul li:hover {
 
 #profil .collection h2 {
     text-transform: uppercase;
+}
+
+#register {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register form {
+    width: 25vw;
+    min-height: 60vh;
+    box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#register form h2 {
+    
+    font-size: 3vw;
+}
+
+#register .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg-name, .reg-psw {
+    padding: 4vh;
+}
+
+.reg-name input, .reg-psw input, .reg-email input {
+    border: none;
+    background-color: var(--background);
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--violet2);
+    box-shadow: inset -5px -5px 10px var(--white), inset 5px 5px 10px var(--grey);
+    outline: none;
+}
+
+form input[type="submit"] {
+    padding: 1.5vh 5vh;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--background);
+    box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
+    margin-top: 2vh;
+    transition: .4s;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--violet2);
+    color: var(--background);
+    cursor: pointer;
+    box-shadow: none;
+    transition: .4s;
 }
