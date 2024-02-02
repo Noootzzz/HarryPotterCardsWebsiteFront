@@ -8,6 +8,33 @@
 </head>
 <body>
 
+
+    <button id="open-modal-btn">Trade a card</button>
+
+    <div id="modal">
+        <div class="modal-content">
+            <form action="#">
+                <h2>Trade a card with someone</h2>
+                <div class="form">
+                    <div class="reg-name-modal">
+                        <p>Name of the receiver</p>
+                        <input type="text" placeholder="Harry7832">
+                    </div>
+                    <div class="reg-name-modal">
+                        <p>Name of the card</p>
+                        <input type="text" placeholder="Voldemort">
+                    </div>
+                    <div class="reg-psw-modal">
+                        <p>Confirm with your password</p>
+                        <input type="password">
+                    </div>
+                </div>
+                <input type="submit">
+            </form>
+            <button id="close-modal-btn">Close</button>
+        </div>
+    </div>
+
     <header>
         <h2>Harry Potter</h2>
         <nav>
@@ -31,21 +58,16 @@
 
     <main id="cards-research">
         <section class="research">
-            <h1>Discover the entire harry potter card collection !</h1>
+            <h1>Discover the entire Harry Potter card collection !</h1>
         <!-- input de recherche -->
         <input id="searchbar" type="text" placeholder="Search a card.." onkeyup="search_card()">
         </section>
         <!-- liste des cartes -->
         <ul id="card-list">
-            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_harry_potter.jpg" alt=""></li>
-            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_voldemort.jpg" alt=""></li>
-            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_hagrid.jpg" alt=""></li>
-            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_draco_malfoy.jpg" alt=""></li>
-            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_voldemort.jpg" alt=""></li>
-            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_hagrid.jpg" alt=""></li>
-            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_draco_malfoy.jpg" alt=""></li>
-            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_harry_potter.jpg" alt=""></li>
-            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_voldemort.jpg" alt=""></li>
+            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_harry_potter.jpg" alt=""><input type="checkbox" id="like-harry"><label for="like-harry" class="like-checkbox"></label></li>
+            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_voldemort.jpg" alt=""><input type="checkbox" id="like-voldemort"><label for="like-voldemort" class="like-checkbox"></label></li>
+            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_hagrid.jpg" alt=""><input type="checkbox" id="like-hagrid"><label for="like-hagrid" class="like-checkbox"></label></li>
+            <li class="hp-card" id="harry-potter"><img src="/img/cards/carte_draco_malfoy.jpg" alt=""><input type="checkbox" id="like-draco"><label for="like-draco" class="like-checkbox"></label></li>
         </ul>
     </main>
 
@@ -53,6 +75,6 @@
 
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
