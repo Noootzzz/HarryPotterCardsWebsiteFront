@@ -12,7 +12,24 @@
 
     <div id="modal">
         <div class="modal-content">
-            <p>This is a simple modal popup.</p>
+            <form action="#">
+                <h2>Trade a card with someone</h2>
+                <div class="form">
+                    <div class="reg-name-modal">
+                        <p>Name of the receiver</p>
+                        <input type="text" placeholder="Harry7832">
+                    </div>
+                    <div class="reg-name-modal">
+                        <p>Name of the card</p>
+                        <input type="text" placeholder="Voldemort">
+                    </div>
+                    <div class="reg-psw-modal">
+                        <p>Confirm with your password</p>
+                        <input type="password">
+                    </div>
+                </div>
+                <input type="submit">
+            </form>
             <button id="close-modal-btn">Close</button>
         </div>
     </div>
@@ -57,10 +74,10 @@
         </li>
     </div>
       
-    <!-- Utilisez un élément pour ouvrir le sidenav -->
-    <img src="./img/icon/burger.png" onclick="openNav()" alt="menu-burger" id="burger">
+    
     
     <main id="home">
+        <img src="./img/icon/burger.png" onclick="openNav()" alt="menu-burger" id="burger">
         <section>
             <h1>Start Your <br>Collection</h1>
             <p>Explore our unique collection of Harry Potter cards ! Discover rarities and your favorites characteres from the enchanting world of Hogwarts. Join a community of enthusiasts and complete your magical collection now !</p>
@@ -69,7 +86,7 @@
                 <a href="login.html">Login</a>
             </div>
         </section>
-        <img src="./img/home.png" alt="illustration-harry-potter-voldemort">
+        <img src="./img/home.png" alt="illustration-harry-potter-voldemort" id="hv">
     </main>
 
     <footer>
