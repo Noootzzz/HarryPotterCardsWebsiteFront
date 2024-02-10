@@ -8,9 +8,6 @@
 </head>
 <body>
 
-    <!-- <button class="trade-btn">
-        Trade a card
-    </button> -->
     <button id="open-modal-btn">Trade a card</button>
 
     <div id="modal">
@@ -40,6 +37,28 @@
             </li>
         </nav>
     </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="details.html">Details</a>
+        </li>
+        <li>
+            <a href="profil.html">Profil</a>
+        </li>
+        <li>
+            <a href="register.html">Register</a>
+        </li>
+        <li>
+            <a href="login.html">Login</a>
+        </li>
+    </div>
+      
+    <!-- Utilisez un élément pour ouvrir le sidenav -->
+    <img src="./img/icon/burger.png" onclick="openNav()" alt="menu-burger" id="burger">
     
     <main id="home">
         <section>
@@ -58,5 +77,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/sidenav.js"></script>
 </body>
 </html>
