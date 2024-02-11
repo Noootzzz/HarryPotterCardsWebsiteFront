@@ -36,7 +36,7 @@
     </div>
 
     <header>
-        <h2>Harry Potter</h2>
+        <h2>Harry Potter Cards</h2>
         <nav>
             <li>
                 <a href="index.html">Home</a>
@@ -78,7 +78,7 @@
     <main id="cards-research">
         <img src="./img/icon/burger.png" onclick="openNav()" alt="menu-burger" id="burger">
         <section class="research">
-            <h1>Discover the entire Harry Potter card collection !</h1>
+            <h1>Discover the entire <span>Harry Potter</span> card collection !</h1>
         <!-- input de recherche -->
         <input id="searchbar" type="text" placeholder="Search a card.." onkeyup="search_card()">
         </section>
@@ -94,16 +94,13 @@
 
         <!-- liste des cartes -->
         <ul id="card-list">
-            <li class="hp-card" id="harry-potter" data-maison="Gryffondor"><img src="img/cards/carte_harry_potter.jpg" alt=""><input type="checkbox" id="like-harry"><label for="like-harry" class="like-checkbox"></label></li>
+            <li onclick="window.location.href='card.html'" class="hp-card" id="harry-potter" data-maison="Gryffondor"><img src="img/cards/carte_harry_potter.jpg" alt=""><input type="checkbox" id="like-harry"><label for="like-harry" class="like-checkbox"></label></li>
             <li class="hp-card" id="harry-potter" data-maison="Serpentard"><img src="img/cards/carte_voldemort.jpg" alt=""><input type="checkbox" id="like-voldemort"><label for="like-voldemort" class="like-checkbox"></label></li>
             <li class="hp-card" id="harry-potter" data-maison="Serdaigle"><img src="img/cards/carte_hagrid.jpg" alt=""><input type="checkbox" id="like-hagrid"><label for="like-hagrid" class="like-checkbox"></label></li>
             <li class="hp-card" id="harry-potter" data-maison="Poufsouffle"><img src="img/cards/carte_draco_malfoy.jpg" alt=""><input type="checkbox" id="like-draco"><label for="like-draco" class="like-checkbox"></label></li>
         </ul>
     </main>
 
-    <footer>
-
-    </footer>
 
     <script src="./js/modal.js"></script>
     <script src="./js/filter.js"></script>

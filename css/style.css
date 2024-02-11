@@ -11,10 +11,6 @@
 }
 
 
-
-  
-
-
 [data-maison="Gryffondor"] {
     background-color: #740001;
     
@@ -110,7 +106,11 @@ header nav li a:hover {
     transition: .2s;
 }
 
-/* Style pour le sidenav */
+span {
+    color: var(--violet2);
+}
+
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -236,14 +236,14 @@ input[type="checkbox"] {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url("/img/icon/coeur_black.png");
+    background-image: url("../img/icon/coeur_black.png");
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 input[type="checkbox"]:checked + .like-checkbox {
-    background-image: url("/img/icon/coeur_red.png");
+    background-image: url("../img/icon/coeur_red.png");
 }
 
 
@@ -285,6 +285,33 @@ main ul li:hover {
     color: var(--violet1);
     opacity: 0;
 }
+
+
+#card-view {
+    margin-top: 5vh;
+    width: 75vw;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#card-view img {
+    width: 20%;
+    box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
+}
+
+#card-view h3 {
+    font-size: 4vh;
+    margin-bottom: 30px;
+}
+
+#card-view .card-info {
+    border: 1px solid var(--dark-text);
+    padding: 9vh;
+    border-radius: 10px;
+}
+
+
 
 #profil {
     width: 100%;
@@ -393,6 +420,10 @@ main ul li:hover {
     outline: none;
 }
 
+form h2 {
+    color: var(--violet1);
+}
+
 form input[type="submit"] {
     padding: 1.5vh 5vh;
     border-radius: 5px;
@@ -469,12 +500,6 @@ form input[type="submit"]:hover {
     border-radius: 5px;
 }
 
-/* #modal form input {
-    padding: 1.5vh 5vh;
-    outline: none;
-    border: 1px solid var(--violet2);
-    border-radius: 5px;
-} */
 
 #modal form {
     padding: 10vh;
@@ -581,5 +606,19 @@ form input[type="submit"]:hover {
     }
     #register form h2 {
         font-size: 5vh;
+    }
+
+
+    #card-view {
+        flex-direction: column;
+        align-items: center;
+        width: 95vw;
+    }
+    #card-view img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    #card-view h3 {
+        margin-bottom: 5px;
     }
 }

@@ -8,6 +8,32 @@
 </head>
 <body>
 
+    <button id="open-modal-btn">Trade a card</button>
+
+    <div id="modal">
+        <div class="modal-content">
+            <form action="#">
+                <h2>Trade a card with someone</h2>
+                <div class="form">
+                    <div class="reg-name-modal">
+                        <p>Name of the receiver</p>
+                        <input type="text" placeholder="Harry7832">
+                    </div>
+                    <div class="reg-name-modal">
+                        <p>Name of the card</p>
+                        <input type="text" placeholder="Voldemort">
+                    </div>
+                    <div class="reg-psw-modal">
+                        <p>Confirm with your password</p>
+                        <input type="password">
+                    </div>
+                </div>
+                <input type="submit">
+            </form>
+            <button id="close-modal-btn">Close</button>
+        </div>
+    </div>
+
     <header>
         <h2>Harry Potter Cards</h2>
         <nav>
@@ -48,28 +74,20 @@
         </li>
     </div>
     <img src="./img/icon/burger.png" onclick="openNav()" alt="menu-burger" id="burger">
-    <main id="register">
-        <form action="#">
-            <h2>Register</h2>
-            <div class="form">
-                <div class="reg-name">
-                    <p>Name</p>
-                    <input type="text" placeholder="Harry7832">
-                </div>
-                <div class="reg-email">
-                    <p>Email</p>
-                    <input type="email" placeholder="ex@gmail.com">
-                </div>
-                <div class="reg-psw">
-                    <p>Password</p>
-                    <input type="password" placeholder=".......">
-                </div>
-            </div>
-            <input type="submit">
-        </form>
+
+
+    <main id="card-view"> 
+        <img src="img/cards/carte_harry_potter.jpg" alt="card">
+        <div class="card-info">
+            <h3>Name : <span>Harry Potter</span></h3>
+            <h3>Age : <span>18</span></h3>
+            <h3>House : <span>Gryffondor</span></h3>
+            <h3>Strength : <span>80/100</span></h3>
+        </div>
     </main>
 
 
     <script src="./js/sidenav.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
