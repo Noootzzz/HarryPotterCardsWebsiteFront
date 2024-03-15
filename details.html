@@ -85,24 +85,21 @@
 
         <div id="maisons">
             <!-- boutons pour filtrer par maison -->
-            <button class="maison-btn" data-maison="Gryffondor">Gryffondor</button>
-            <button class="maison-btn" data-maison="Serpentard">Serpentard</button>
-            <button class="maison-btn" data-maison="Serdaigle">Serdaigle</button>
-            <button class="maison-btn" data-maison="Poufsouffle">Poufsouffle</button>
+            <button class="maison-btn" data-maison="Gryffindor">Gryffondor</button>
+            <button class="maison-btn" data-maison="Slytherin">Serpentard</button>
+            <button class="maison-btn" data-maison="Ravenclaw">Serdaigle</button>
+            <button class="maison-btn" data-maison="Hufflepuff">Poufsouffle</button>
             <button id="reset">Tout afficher</button>
         </div>
 
         <!-- liste des cartes -->
-        <ul id="card-list">
-            <li onclick="window.location.href='card.html'" class="hp-card" id="harry-potter" data-maison="Gryffondor"><img src="img/cards/carte_harry_potter.jpg" alt=""><input type="checkbox" id="like-harry"><label for="like-harry" class="like-checkbox"></label></li>
-            <li class="hp-card" id="harry-potter" data-maison="Serpentard"><img src="img/cards/carte_voldemort.jpg" alt=""><input type="checkbox" id="like-voldemort"><label for="like-voldemort" class="like-checkbox"></label></li>
-            <li class="hp-card" id="harry-potter" data-maison="Serdaigle"><img src="img/cards/carte_hagrid.jpg" alt=""><input type="checkbox" id="like-hagrid"><label for="like-hagrid" class="like-checkbox"></label></li>
-            <li class="hp-card" id="harry-potter" data-maison="Poufsouffle"><img src="img/cards/carte_draco_malfoy.jpg" alt=""><input type="checkbox" id="like-draco"><label for="like-draco" class="like-checkbox"></label></li>
-        </ul>
+        <ul id="card-list"></ul>
     </main>
 
 
     <script src="./js/modal.js"></script>
+    <script src="./js/hp_api.js"></script>
+    <script src="./js/single_hp_api.js"></script>
     <script src="./js/filter.js"></script>
     <script src="./js/sidenav.js"></script>
 </body>

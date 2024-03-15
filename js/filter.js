@@ -3,14 +3,12 @@ document.querySelectorAll(".maison-btn").forEach(btn => {
         let maison = btn.getAttribute("data-maison")
         filterCartes(maison)
         updateCouleurs(maison)
-        
     })
 })
 
 document.getElementById("reset").addEventListener("click", () => {
     filterCartes() // sans argument pour tout afficher
     updateCouleurs() // reinitialiser les couleurs
-    
 })
 
 
@@ -27,16 +25,16 @@ function filterCartes(maison) {
 function updateCouleurs(maison = "") {
     const root = document.documentElement
     switch(maison) {
-        case "Gryffondor":
+        case "Gryffindor":
             root.style.setProperty("--dark-text", "#740001")
             break
-        case "Serpentard":
+        case "Slytherin":
             root.style.setProperty("--dark-text", "#1a472a")
             break
-        case "Serdaigle":
+        case "Ravenclaw":
             root.style.setProperty("--dark-text", "#222f5b")
             break
-        case "Poufsouffle":
+        case "Hufflepuff":
             root.style.setProperty("--dark-text", "#ffdb00")
             break
         default:
