@@ -1,8 +1,10 @@
+//fonction fetch qui recupere les informations 
 function fetchCharacters() {
     return fetch('https://hp-api.lainocs.fr/characters')
     .then((response) => response.json())
 }
 
+//fonction asynchrone pour afficher
 async function displayCharacters() {
     const data = await fetchCharacters()
     data.forEach(character => {
@@ -15,5 +17,5 @@ async function displayCharacters() {
             </a>`
     })
 }
-
+//appel de la fonction
 displayCharacters()

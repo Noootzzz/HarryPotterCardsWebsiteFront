@@ -1,3 +1,4 @@
+//fonction fetch qui recupere les informations 
 function fetchCharacter() {
     let url = window.location.search
     let slug = new URLSearchParams(url).get('slug')
@@ -5,6 +6,7 @@ function fetchCharacter() {
     .then((response) => response.json())
 }
 
+//fonction asynchrone pour afficher
 async function displayCharacter() {
     const data = await fetchCharacter()
     document.querySelector('#card-view').innerHTML = `
@@ -17,5 +19,5 @@ async function displayCharacter() {
         <p>Blood : ${data.blood}</p>
         <a href="details.html">Back</a>`
 }
-
+//appel de la fonction
 displayCharacter()

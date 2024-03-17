@@ -4,32 +4,33 @@
     --background: #E4EBF5; 
     --violet1: #313fdb;
     --violet2: #5865f2;
+    --red: #dc3545;
     --white: #FFFFFF;
     --grey: #c8d0e7;
     --light-text: #909dbd;
     --dark-text: #111;
 }
 
-
-[data-maison="Gryffondor"] {
+/* 
+[data-maison="Gryffindor"] {
     background-color: #740001;
     
 }
 
-[data-maison="Serpentard"] {
+[data-maison="Slytherin"] {
     background-color: #1a472a;
     
 }
 
-[data-maison="Serdaigle"] {
+[data-maison="Ravenclaw"] {
     background-color: #222f5b;
    
 }
 
-[data-maison="Poufsouffle"] {
+[data-maison="Hufflepuff"] {
     background-color: #ffdb00;
     
-}
+} */
 
 .maison-btn, #reset {
     background-color: var(--background);
@@ -296,20 +297,23 @@ main ul li:hover {
     flex-direction: column;
     justify-content: space-between;
 }
+
 #card-view img {
     width: 20%;
     box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
 }
 
-#card-view h3 {
+#card-view h2 {
+    text-transform: uppercase;
     font-size: 4vh;
-    margin-bottom: 30px;
+    
+    color: var(--violet1);
 }
-
-#card-view .card-info {
-    border: 1px solid var(--dark-text);
-    padding: 9vh;
-    border-radius: 10px;
+#card-view p {
+    margin: 5px;
+    padding: 5px 15px;
+    border: 1px solid var(--violet1);
+    border-radius: 5px;
 }
 
 #profil {
@@ -488,10 +492,10 @@ form input[type="submit"]:hover {
     transition: .2s;
 }
 
-#close-modal-btn {
-    margin-top: 20px;
+#close-modal-btn, #card-view a {
+    margin-top: 10px;
     padding: 10px 20px;
-    background: #dc3545;
+    background: var(--red);
     color: var(--white);
     border: none;
     cursor: pointer;
