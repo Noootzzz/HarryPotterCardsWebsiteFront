@@ -11,7 +11,6 @@ document.getElementById("reset").addEventListener("click", () => {
     updateCouleurs() // reinitialiser les couleurs
 })
 
-
 function filterCartes(maison) {
     document.querySelectorAll(".hp-card").forEach(carte => {
         if (!maison || carte.getAttribute("data-maison") === maison) {

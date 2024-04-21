@@ -1,106 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Details</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
-
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <button id="open-modal-btn">Trade a card</button>
 
     <div id="modal">
-        <div class="modal-content">
-            <form action="#">
-                <h2>Trade a card with someone</h2>
-                <div class="form">
-                    <div class="reg-name-modal">
-                        <p>Name of the receiver</p>
-                        <input type="text" placeholder="Harry7832">
-                    </div>
-                    <div class="reg-name-modal">
-                        <p>Name of the card</p>
-                        <input type="text" placeholder="Voldemort">
-                    </div>
-                    <div class="reg-psw-modal">
-                        <p>Confirm with your password</p>
-                        <input type="password">
-                    </div>
-                </div>
-                <input type="submit">
-            </form>
-            <button id="close-modal-btn">Close</button>
-        </div>
+      <div class="modal-content">
+        <form action="#">
+          <h2>Trade a card with someone</h2>
+          <div class="form">
+            <div class="reg-name-modal">
+              <p>Name of the receiver</p>
+              <input type="text" placeholder="Harry7832" />
+            </div>
+            <div class="reg-name-modal">
+              <p>Name of the card</p>
+              <input type="text" placeholder="Voldemort" />
+            </div>
+            <div class="reg-psw-modal">
+              <p>Confirm with your password</p>
+              <input type="password" />
+            </div>
+          </div>
+          <input type="submit" />
+        </form>
+        <button id="close-modal-btn">Close</button>
+      </div>
     </div>
 
     <header>
-        <h2>Harry Potter Cards</h2>
-        <nav>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="details.html">Details</a>
-            </li>
-            <li>
-                <a href="profil.html">Profil</a>
-            </li>
-            <li>
-                <a href="register.html">Register</a>
-            </li>
-            <li>
-                <a href="login.html">Login</a>
-            </li>
-        </nav>
+      <h2>Harry Potter Cards</h2>
+      <nav>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="details.html">Details</a>
+        </li>
+        <li>
+          <a href="profil.html">Profil</a>
+        </li>
+        <li>
+          <a href="register.html">Register</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+      </nav>
     </header>
 
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="details.html">Details</a>
-        </li>
-        <li>
-            <a href="profil.html">Profil</a>
-        </li>
-        <li>
-            <a href="register.html">Register</a>
-        </li>
-        <li>
-            <a href="login.html">Login</a>
-        </li>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="details.html">Details</a>
+      </li>
+      <li>
+        <a href="profil.html">Profil</a>
+      </li>
+      <li>
+        <a href="register.html">Register</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
     </div>
 
     <main id="cards-research">
-        <img src="./img/icon/burger.png" onclick="openNav()" alt="menu-burger" id="burger">
-        <section class="research">
-            <h1>Discover the entire <span>Harry Potter</span> card collection !</h1>
+      <img
+        src="./img/icon/burger.png"
+        onclick="openNav()"
+        alt="menu-burger"
+        id="burger"
+      />
+      <section class="research">
+        <h1>Discover the entire <span>Harry Potter</span> card collection !</h1>
         <!-- input de recherche -->
-        <input id="searchbar" type="text" placeholder="Search a card.." onkeyup="search_card()">
-        </section>
+        <input
+          id="searchbar"
+          type="text"
+          placeholder="Search a card.."
+          onkeyup="search_card()"
+        />
+      </section>
 
-        <div id="maisons">
-            <!-- boutons pour filtrer par maison -->
-            <button class="maison-btn" data-maison="Gryffindor">Gryffondor</button>
-            <button class="maison-btn" data-maison="Slytherin">Serpentard</button>
-            <button class="maison-btn" data-maison="Ravenclaw">Serdaigle</button>
-            <button class="maison-btn" data-maison="Hufflepuff">Poufsouffle</button>
-            <button id="reset">Tout afficher</button>
-        </div>
+      <div id="maisons">
+        <!-- boutons pour filtrer par maison -->
+        <button class="maison-btn" data-maison="Gryffindor">Gryffondor</button>
+        <button class="maison-btn" data-maison="Slytherin">Serpentard</button>
+        <button class="maison-btn" data-maison="Ravenclaw">Serdaigle</button>
+        <button class="maison-btn" data-maison="Hufflepuff">Poufsouffle</button>
+        <button id="reset">Tout afficher</button>
+      </div>
 
-        <!-- liste des cartes -->
-        <ul id="card-list"></ul>
+      <!-- liste des cartes -->
+      <ul id="card-list"></ul>
     </main>
-
 
     <script src="./js/modal.js"></script>
     <script src="./js/hp_api.js"></script>
     <script src="./js/single_hp_api.js"></script>
     <script src="./js/filter.js"></script>
     <script src="./js/sidenav.js"></script>
-</body>
+  </body>
 </html>

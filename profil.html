@@ -1,103 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <button id="open-modal-btn">Trade a card</button>
 
     <div id="modal">
-        <div class="modal-content">
-            <form action="#">
-                <h2>Trade a card with someone</h2>
-                <div class="form">
-                    <div class="reg-name-modal">
-                        <p>Name of the receiver</p>
-                        <input type="text" placeholder="Harry7832">
-                    </div>
-                    <div class="reg-name-modal">
-                        <p>Name of the card</p>
-                        <input type="text" placeholder="Voldemort">
-                    </div>
-                    <div class="reg-psw-modal">
-                        <p>Confirm with your password</p>
-                        <input type="password">
-                    </div>
-                </div>
-                <input type="submit">
-            </form>
-            <button id="close-modal-btn">Close</button>
-        </div>
+      <div class="modal-content">
+        <form action="#">
+          <h2>Trade a card with someone</h2>
+          <div class="form">
+            <div class="reg-name-modal">
+              <p>Name of the receiver</p>
+              <input type="text" placeholder="Harry7832" />
+            </div>
+            <div class="reg-name-modal">
+              <p>Name of the card</p>
+              <input type="text" placeholder="Voldemort" />
+            </div>
+            <div class="reg-psw-modal">
+              <p>Confirm with your password</p>
+              <input type="password" />
+            </div>
+          </div>
+          <input type="submit" />
+        </form>
+        <button id="close-modal-btn">Close</button>
+      </div>
     </div>
 
     <header>
-        <h2>Harry Potter Cards</h2>
-        <nav>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="details.html">Details</a>
-            </li>
-            <li>
-                <a href="profil.html">Profil</a>
-            </li>
-            <li>
-                <a href="register.html">Register</a>
-            </li>
-            <li>
-                <a href="login.html">Login</a>
-            </li>
-        </nav>
+      <h2>Harry Potter Cards</h2>
+      <nav>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="details.html">Details</a>
+        </li>
+        <li>
+          <a href="profil.html">Profil</a>
+        </li>
+        <li>
+          <a href="register.html">Register</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+      </nav>
     </header>
 
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="details.html">Details</a>
-        </li>
-        <li>
-            <a href="profil.html">Profil</a>
-        </li>
-        <li>
-            <a href="register.html">Register</a>
-        </li>
-        <li>
-            <a href="login.html">Login</a>
-        </li>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="details.html">Details</a>
+      </li>
+      <li>
+        <a href="profil.html">Profil</a>
+      </li>
+      <li>
+        <a href="register.html">Register</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
     </div>
 
     <main id="profil">
-        <img src="./img/icon/burger.png" onclick="openNav()" alt="menu-burger" id="burger">
-        <div class="user">
-            <div class="pseudo">
-                <h1>Noot</h1>
-            </div>
-            <div class="identity">
-                <img src="img/maisons/serpentar.png" alt="house">
-                <!-- <h2>Serpentard</h2> -->
-            </div>
+      <img
+        src="./img/icon/burger.png"
+        onclick="openNav()"
+        alt="menu-burger"
+        id="burger"
+      />
+      <div class="user">
+        <div class="pseudo">
+          <h2 id="pseudo"></h2>
         </div>
-        <div class="collection">
-            <h2>Possessed Cards: </h2>
-            <ul id="card-list">
-                <li class="hp-card" id="harry-potter"><img src="img/cards/carte_harry_potter.jpg" alt=""></li>
-                <li class="hp-card" id="harry-potter"><img src="img/cards/carte_voldemort.jpg" alt=""></li>
-                <li class="hp-card" id="harry-potter"><img src="img/cards/carte_hagrid.jpg" alt=""></li>
-                <li class="hp-card" id="harry-potter"><img src="img/cards/carte_draco_malfoy.jpg" alt=""></li>
-            </ul>
+        <div class="pseudo">
+          <h2 id="email"></h2>
         </div>
+        <div class="identity">
+          <img src="img/maisons/serpentar.png" alt="house" />
+          <!-- <h2>Serpentard</h2> -->
+        </div>
+      </div>
+      <div class="collection">
+        <h2>Possessed Cards:</h2>
+        <ul id="card-list">
+          <li class="hp-card" id="harry-potter">
+            <img src="img/cards/carte_harry_potter.jpg" alt="" />
+          </li>
+          <li class="hp-card" id="harry-potter">
+            <img src="img/cards/carte_voldemort.jpg" alt="" />
+          </li>
+          <li class="hp-card" id="harry-potter">
+            <img src="img/cards/carte_hagrid.jpg" alt="" />
+          </li>
+          <li class="hp-card" id="harry-potter">
+            <img src="img/cards/carte_draco_malfoy.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
     </main>
-
 
     <script src="./js/modal.js"></script>
     <script src="./js/sidenav.js"></script>
-</body>
+    <script src="./js/profil.js"></script>
+  </body>
 </html>
