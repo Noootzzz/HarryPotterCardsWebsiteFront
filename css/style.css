@@ -312,6 +312,11 @@ main ul li:hover {
   border-radius: 5px;
 }
 
+.hp-card {
+  text-align: center;
+  padding: 2vh;
+}
+
 #profil {
   width: 100%;
   min-height: 60vh;
@@ -615,6 +620,7 @@ form input[type="submit"]:hover {
   #card-view {
     flex-direction: column;
     align-items: center;
+    text-align: center;
     width: 95vw;
   }
   #card-view img {
@@ -623,5 +629,6 @@ form input[type="submit"]:hover {
   }
   #card-view h3 {
     margin-bottom: 5px;
+    text-align: center;
   }
 }
