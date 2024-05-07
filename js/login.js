@@ -1,4 +1,11 @@
 const formulaire = document.getElementById("formulaire");
+const email = document.getElementById("email").value;
+
+localStorage.setItem("userEmail", email);
+console.log(email);
+const storedEmail = localStorage.getItem("userEmail");
+
+console.log(storedEmail);
 
 formulaire.addEventListener("submit", async (event) => {
   event.preventDefault(); //eviter que la page se recharger quand on envoie

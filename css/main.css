@@ -1,0 +1,13 @@
+@import url(./style.css);
+@import url(./variables.css);
+@import url(./body.css);
+@import url(./header.css);
+@import url(./modal.css);
+@import url(./home-main.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-f);
+}

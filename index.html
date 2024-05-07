@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
     <button id="open-modal-btn">Trade a card</button>
 
     <div id="modal">
-        <div class="modal-content">
-            <form action="#">
-                <h2>Trade a card with someone</h2>
-                <div class="form">
-                    <div class="reg-name-modal">
-                        <p>Name of the receiver</p>
-                        <input type="text" placeholder="Harry7832">
-                    </div>
-                    <div class="reg-name-modal">
-                        <p>Name of the card</p>
-                        <input type="text" placeholder="Voldemort">
-                    </div>
-                    <div class="reg-psw-modal">
-                        <p>Confirm with your password</p>
-                        <input type="password">
-                    </div>
-                </div>
-                <input type="submit">
-            </form>
-            <button id="close-modal-btn">Close</button>
-        </div>
+      <div class="modal-content">
+        <form action="#">
+          <h2>Trade a card with someone</h2>
+          <div class="form">
+            <div class="reg-name-modal">
+              <p>Name of the receiver</p>
+              <input type="text" placeholder="Harry7832" />
+            </div>
+            <div class="reg-name-modal">
+              <p>Name of the card</p>
+              <input type="text" placeholder="Voldemort" />
+            </div>
+            <div class="reg-psw-modal">
+              <p>Confirm with your password</p>
+              <input type="password" />
+            </div>
+          </div>
+          <input type="submit" />
+        </form>
+        <button id="close-modal-btn">Close</button>
+      </div>
     </div>
-    
+
     <header>
-        <h2>Harry Potter Cards</h2>
-        <nav>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="details.html">Details</a>
-            </li>
-            <li>
-                <a href="profil.html">Profil</a>
-            </li>
-            <li>
-                <a href="register.html">Register</a>
-            </li>
-            <li>
-                <a href="login.html">Login</a>
-            </li>
-        </nav>
+      <h2>Harry Potter Cards</h2>
+      <nav>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="details.html">Details</a>
+        </li>
+        <li>
+          <a href="profil.html">Profil</a>
+        </li>
+        <li>
+          <a href="register.html">Register</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+      </nav>
     </header>
 
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="details.html">Details</a>
-        </li>
-        <li>
-            <a href="profil.html">Profil</a>
-        </li>
-        <li>
-            <a href="register.html">Register</a>
-        </li>
-        <li>
-            <a href="login.html">Login</a>
-        </li>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="details.html">Details</a>
+      </li>
+      <li>
+        <a href="profil.html">Profil</a>
+      </li>
+      <li>
+        <a href="register.html">Register</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
     </div>
-      
-    
-    
-    <main id="home">
-        <img src="./img/icon/burger.png" onclick="openNav()" alt="menu-burger" id="burger">
-        <section>
-            <h1>Start Your <br><span>Collection</span></h1>
-            <p>Explore our unique collection of Harry Potter cards ! Discover rarities and your favorites characteres from the enchanting world of Hogwarts. Join a community of enthusiasts and complete your magical collection now !</p>
-            <div id="button">
-                <a href="register.html">Register</a>
-                <a href="login.html">Login</a>
-            </div>
-        </section>
-        <img src="./img/home.png" alt="illustration-harry-potter-voldemort" id="hv">
-    </main>
 
+    <main id="home">
+      <img
+        src="./img/icon/burger.png"
+        onclick="openNav()"
+        alt="menu-burger"
+        id="burger"
+      />
+      <section>
+        <h1>Start Your <br /><span>Collection</span></h1>
+        <p>
+          Explore our unique collection of Harry Potter cards ! Discover
+          rarities and your favorites characteres from the enchanting world of
+          Hogwarts. Join a community of enthusiasts and complete your magical
+          collection now !
+        </p>
+        <div id="button">
+          <a href="register.html">Register</a>
+          <a href="login.html">Login</a>
+        </div>
+      </section>
+      <img
+        src="./img/home.png"
+        alt="illustration-harry-potter-voldemort"
+        id="hv"
+      />
+    </main>
 
     <script src="./js/modal.js"></script>
     <script src="./js/sidenav.js"></script>
-</body>
+  </body>
 </html>

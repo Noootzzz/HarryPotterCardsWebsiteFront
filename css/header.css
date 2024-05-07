@@ -1,0 +1,74 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 0vh;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
+}
+
+header h2 {
+  font-size: 2rem;
+  padding: 0vw 2vw;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav li {
+  padding: 2vw 2vw;
+}
+
+header nav li a {
+  color: var(--dark-text);
+  padding: 1.5vh 3vh;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+header nav li a:hover {
+  box-shadow: inset -5px -5px 10px var(--white), inset 5px 5px 10px var(--grey);
+  transition: 0.2s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-text);
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 60px;
+  display: none;
+}
+
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--light-text);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: var(--white);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#burger {
+  width: 10%;
+  display: none;
+}

@@ -12,7 +12,7 @@ async function displayCharacter() {
   const data = await fetchCharacter();
 
   document.querySelector("#card-view").innerHTML = `
-        <h2>${data.name}</h2>
+        <h2>${data.slug}</h2>
         <img src="${data.image}" alt="${data.name}">
         <p>House : ${data.house}</p>
         <p>Actor : ${data.actor}</p>
@@ -20,7 +20,7 @@ async function displayCharacter() {
         <p>Patronus : ${data.patronus}</p>
         <p>Blood : ${data.blood}</p>
         <a href="details.html">Back</a>`;
-  console.log(data.house);
+  // console.log(data.house);
 }
 //appel de la fonction
 displayCharacter();
@@ -47,4 +47,4 @@ async function fetchHouse() {
 }
 
 // Appel de la fonction fetchHouse()
-fetchHouse();
+//fetchHouse();

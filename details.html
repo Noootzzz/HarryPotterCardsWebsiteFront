@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Details</title>
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -88,8 +89,10 @@
         <input
           id="searchbar"
           type="text"
+          name="search"
+          value=""
           placeholder="Search a card.."
-          onkeyup="search_card()"
+          data-search=""
         />
       </section>
 
@@ -108,8 +111,9 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/hp_api.js"></script>
-    <script src="./js/single_hp_api.js"></script>
+    <!-- <script src="./js/single_hp_api.js"></script> -->
     <script src="./js/filter.js"></script>
     <script src="./js/sidenav.js"></script>
+    <script src="./js/search.js"></script>
   </body>
 </html>

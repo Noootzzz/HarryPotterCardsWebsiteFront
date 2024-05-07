@@ -1,75 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header>
-        <h2>Harry Potter Cards</h2>
-        <nav>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="details.html">Details</a>
-            </li>
-            <li>
-                <a href="profil.html">Profil</a>
-            </li>
-            <li>
-                <a href="register.html">Register</a>
-            </li>
-            <li>
-                <a href="login.html">Login</a>
-            </li>
-        </nav>
+      <h2>Harry Potter Cards</h2>
+      <nav>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="details.html">Details</a>
+        </li>
+        <li>
+          <a href="profil.html">Profil</a>
+        </li>
+        <li>
+          <a href="register.html">Register</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+      </nav>
     </header>
-    
+
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="details.html">Details</a>
-        </li>
-        <li>
-            <a href="profil.html">Profil</a>
-        </li>
-        <li>
-            <a href="register.html">Register</a>
-        </li>
-        <li>
-            <a href="login.html">Login</a>
-        </li>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="details.html">Details</a>
+      </li>
+      <li>
+        <a href="profil.html">Profil</a>
+      </li>
+      <li>
+        <a href="register.html">Register</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
     </div>
-    <img src="./img/icon/burger.png" onclick="openNav()" alt="menu-burger" id="burger">
+    <img
+      src="./img/icon/burger.png"
+      onclick="openNav()"
+      alt="menu-burger"
+      id="burger"
+    />
     <main id="register">
-        <form action="#">
-            <h2>Register</h2>
-            <div class="form">
-                <div class="reg-name">
-                    <p>Name</p>
-                    <input type="text" placeholder="Harry7832">
-                </div>
-                <div class="reg-email">
-                    <p>Email</p>
-                    <input type="email" placeholder="ex@gmail.com">
-                </div>
-                <div class="reg-psw">
-                    <p>Password</p>
-                    <input type="password" placeholder=".......">
-                </div>
-            </div>
-            <input type="submit">
-        </form>
+      <form action="#">
+        <h2>Register</h2>
+        <div class="form">
+          <div class="reg-name">
+            <p>Name</p>
+            <input type="text" placeholder="Harry7832" />
+          </div>
+          <div class="reg-email">
+            <p>Email</p>
+            <input
+              type="email"
+              id="email-register"
+              placeholder="ex@gmail.com"
+            />
+          </div>
+          <div class="reg-psw">
+            <p>Password</p>
+            <input type="password" placeholder="......." />
+          </div>
+        </div>
+        <input type="submit" />
+      </form>
     </main>
 
-
-    <script src="./js/sidenav.js"></script>
-</body>
+    <script src="./js/sidenav.js"></script
+    
+  </body>
 </html>
