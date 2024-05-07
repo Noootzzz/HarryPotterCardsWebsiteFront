@@ -1,11 +1,4 @@
 const formulaire = document.getElementById("formulaire");
-const email = document.getElementById("email").value;
-
-localStorage.setItem("userEmail", email);
-console.log(email);
-const storedEmail = localStorage.getItem("userEmail");
-
-console.log(storedEmail);
 
 formulaire.addEventListener("submit", async (event) => {
   event.preventDefault(); //eviter que la page se recharger quand on envoie
@@ -24,6 +17,14 @@ formulaire.addEventListener("submit", async (event) => {
 
   const token = data.token;
 
-  localStorage.setItem("token", token);
-  console.log("token :", token);
+  if (token) {
+    localStorage.setItem("token", token);
+    window.location.href = "profil.html";
+    alert("Connecté avec l'adresse e-mail : " + email);
+  }
+  if (!token) {
+    alert(
+      "Erreur de connexion. Veuillez vérifier votre identifiant et mot de passe."
+    );
+  }
 });
