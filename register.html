@@ -55,24 +55,20 @@
       id="burger"
     />
     <main id="register">
-      <form action="#">
+      <form method="POST" id="reg-form">
         <h2>Register</h2>
         <div class="form">
           <div class="reg-name">
             <p>Name</p>
-            <input type="text" placeholder="Harry7832" />
+            <input type="text" id="reg-name" placeholder="Harry7832" />
           </div>
           <div class="reg-email">
             <p>Email</p>
-            <input
-              type="email"
-              id="email-register"
-              placeholder="ex@gmail.com"
-            />
+            <input type="email" id="reg-email" placeholder="ex@gmail.com" />
           </div>
           <div class="reg-psw">
             <p>Password</p>
-            <input type="password" placeholder="......." />
+            <input type="password" id="reg-psw" placeholder="......." />
           </div>
         </div>
         <input type="submit" />
@@ -80,5 +76,6 @@
     </main>
 
     <script src="./js/sidenav.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>
