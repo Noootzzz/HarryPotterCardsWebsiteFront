@@ -1,0 +1,28 @@
+#open-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#booster-cards-container {
+  min-height: 60vh;
+  width: 60vw;
+}
+
+#booster-cards-container .card-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+}
+
+#booster-cards-container .card-list .hp-card {
+  /* border: 1px solid red; */
+  min-height: 40vh;
+}
+
+#booster-cards-container .card-list .hp-card img {
+  width: 10vw;
+  max-height: 30vh;
+}
