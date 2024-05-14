@@ -5,6 +5,7 @@
 @import url(./modal.css);
 @import url(./home-main.css);
 @import url(./open-booster.css);
+@import url(./favorite.css);
 
 * {
   margin: 0;
