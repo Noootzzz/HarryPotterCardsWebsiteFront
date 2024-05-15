@@ -1,0 +1,76 @@
+#register {
+  background-color: var(--white);
+  text-align: left;
+  min-height: 60vh;
+  padding: 0vh 5vh 5vh 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  transition: 0s;
+}
+
+#register #reg-form {
+  width: 50%;
+  min-height: 60vh;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  border-left: 2px solid var(--primary);
+  border-right: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+#reg-form h2 {
+  margin-top: 5vh;
+  font-size: 6vh;
+  text-align: left;
+}
+
+#register #reg-form p {
+  margin: 10px 0px;
+}
+
+#register #reg-form input {
+  border: 2px solid var(--black);
+  margin-bottom: 20px;
+  padding: 2vh 7vh;
+  border-radius: 5px;
+  color: var(--primary);
+  transition: 0.3s;
+}
+
+#register #reg-form input:focus {
+  border: 2px solid var(--primary);
+  outline: none;
+  transition: 0.3s;
+}
+
+#register #reg-form input:focus::placeholder {
+  opacity: 0;
+  transition: 0.3s;
+}
+#register #reg-form input[type="submit"] {
+  color: var(--white);
+  padding: 2.5vh 4vh;
+  background-color: var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
+  border: var(--border-button-color);
+  transition: 0.3s;
+}
+
+#register #reg-form input[type="submit"]:hover {
+  color: var(--white);
+  border: var(--border-button-white);
+  background-color: var(--primary-light);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#reg-form a {
+  margin: 15px;
+}

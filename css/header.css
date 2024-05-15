@@ -5,7 +5,7 @@ header {
   padding: 4vh 5vh;
   background-color: var(--white);
   /* border-bottom: 2px solid var(--light-black); */
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
 header h2 {

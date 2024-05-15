@@ -36,8 +36,8 @@
   --small: 6px 20px;
   --normal: 10px 30px;
   /* border */
-  --border-button-color: 1px solid var(--primary);
-  --border-button-white: 1px solid var(--primary-light);
+  --border-button-color: 2px solid var(--primary);
+  --border-button-white: 2px solid var(--primary-light);
 }
 
 .darkmode {

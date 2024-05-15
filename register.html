@@ -4,28 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header>
       <h2>Harry Potter Cards</h2>
-      <nav>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="details.html">Details</a>
-        </li>
-        <li>
-          <a href="profil.html">Profil</a>
-        </li>
-        <li>
-          <a href="register.html">Register</a>
-        </li>
-        <li>
-          <a href="login.html">Login</a>
-        </li>
-      </nav>
+      <button class="darkmode">Darkmode</button>
     </header>
 
     <div id="mySidenav" class="sidenav">
@@ -64,18 +48,24 @@
           </div>
           <div class="reg-email">
             <p>Email</p>
-            <input type="email" id="reg-email" placeholder="ex@gmail.com" />
+            <input type="email" id="reg-email" placeholder="Harry@gmail.com" />
           </div>
           <div class="reg-psw">
             <p>Password</p>
-            <input type="password" id="reg-psw" placeholder="......." />
+            <input
+              type="password"
+              id="reg-psw"
+              placeholder=". . . . . . . . . . . ."
+            />
           </div>
         </div>
-        <input type="submit" />
+        <a href="login.html">You already have an account, Login here.</a>
+        <input type="submit" value="Register" />
       </form>
     </main>
 
     <script src="./js/sidenav.js"></script>
     <script src="./js/register.js"></script>
+    <script src="./js/darkmode.js"></script>
   </body>
 </html>

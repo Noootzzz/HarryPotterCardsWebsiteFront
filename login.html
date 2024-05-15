@@ -4,28 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header>
-      <h2>Harry Potter Cards</h2>
-      <nav>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="details.html">Details</a>
-        </li>
-        <li>
-          <a href="profil.html">Profil</a>
-        </li>
-        <li>
-          <a href="register.html">Register</a>
-        </li>
-        <li>
-          <a href="login.html">Login</a>
-        </li>
-      </nav>
+      <h2><span>H</span>arry <span>P</span>otter <span>C</span>ards</h2>
+      <button class="Darkmode">DarkMode</button>
     </header>
 
     <div id="mySidenav" class="sidenav">
@@ -55,7 +39,7 @@
       id="burger"
     />
     <main id="register">
-      <form method="POST" id="formulaire">
+      <form method="POST" id="reg-form">
         <h2>Login</h2>
         <div class="form">
           <div class="reg-email">
@@ -64,15 +48,21 @@
           </div>
           <div class="reg-psw">
             <p>Password</p>
-            <input type="password" id="password" placeholder="......." />
+            <input
+              type="password"
+              id="password"
+              placeholder=". . . . . . . . . . . ."
+            />
           </div>
         </div>
-        <input type="submit" />
+        <a href="register.html">You don't have any account, Register here.</a>
+        <input type="submit" value="Login" />
       </form>
     </main>
 
     <script src="./js/sidenav.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/localstorage.js"></script>
+    <script src="./js/darkmode.js"></script>
   </body>
 </html>

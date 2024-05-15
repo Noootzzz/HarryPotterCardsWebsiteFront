@@ -1,4 +1,4 @@
-const formulaire = document.getElementById("formulaire");
+const formulaire = document.getElementById("reg-form");
 
 formulaire.addEventListener("submit", async (event) => {
   event.preventDefault(); //eviter que la page se recharger quand on envoie
