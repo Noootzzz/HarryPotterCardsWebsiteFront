@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Details</title>
-
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -14,11 +12,11 @@
     <div id="modal">
       <div class="modal-content">
         <form action="#">
-          <h2>Trade a card with someone</h2>
+          <h2>Trade a <span>card</span> with someone</h2>
           <div class="form">
             <div class="reg-name-modal">
-              <p>Name of the receiver</p>
-              <input type="text" placeholder="Harry7832" />
+              <p>Email of the receiver</p>
+              <input type="text" placeholder="Harry@gmail.com" />
             </div>
             <div class="reg-name-modal">
               <p>Name of the card</p>
@@ -26,17 +24,17 @@
             </div>
             <div class="reg-psw-modal">
               <p>Confirm with your password</p>
-              <input type="password" />
+              <input type="password" placeholder=". . . . . . . . . . . ." />
             </div>
           </div>
-          <input type="submit" />
+          <input type="submit" value="Trade" />
         </form>
         <button id="close-modal-btn">Close</button>
       </div>
     </div>
 
     <header>
-      <h2>Harry Potter Cards</h2>
+      <h2><span>H</span>arry <span>P</span>otter <span>C</span>ards</h2>
       <nav>
         <li>
           <a href="index.html">Home</a>
@@ -47,13 +45,14 @@
         <li>
           <a href="profil.html">Profil</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="register.html">Register</a>
         </li>
         <li>
           <a href="login.html">Login</a>
-        </li>
+        </li> -->
       </nav>
+      <button class="darkmode">DarkMode</button>
     </header>
 
     <div id="mySidenav" class="sidenav">

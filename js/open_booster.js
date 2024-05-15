@@ -14,7 +14,7 @@ drawButton.addEventListener("click", async () => {
     alert("Vous ne pouvez ouvrir un booster qu'une fois toutes les 24 heures.");
   } else {
     // Si 24 heures se sont écoulées ou si c'est la première ouverture, procéder à l'ouverture du booster
-    const cards = await drawRandomCards(3);
+    const cards = await drawRandomCards(5);
     displayCards(cards);
 
     const token = localStorage.getItem("token");
@@ -65,6 +65,10 @@ function displayCards(cards) {
   cardsContainer.innerHTML = "";
   const cardList = document.createElement("ul"); // Liste des cartes
   cardList.classList.add("card-list");
+
+  const title = document.createElement("h2");
+  title.innerHTML = "You got these cards :";
+  cardsContainer.appendChild(title);
 
   cards.forEach((card) => {
     const listItem = document.createElement("li");

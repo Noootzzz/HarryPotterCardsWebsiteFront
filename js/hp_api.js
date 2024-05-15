@@ -44,6 +44,10 @@ async function displayCharacters() {
     const link = document.createElement("a");
     link.href = `card.html?slug=${character.slug}`;
 
+    const like = document.createElement("div");
+    like.classList.add("like");
+    listItem.appendChild(like);
+
     const h2 = document.createElement("h2");
     h2.textContent = character.name;
 
@@ -61,9 +65,11 @@ async function displayCharacters() {
 
     favBtn.addEventListener("click", toggleFavorite);
 
+    like.appendChild(favBtn);
+
     link.appendChild(h2);
     link.appendChild(img);
-    listItem.appendChild(favBtn);
+
     listItem.appendChild(link);
 
     cardList.appendChild(listItem);
@@ -94,15 +100,18 @@ searchInput.addEventListener("input", (e) => {
 // Fonction pour basculer l'état du favori et mettre à jour l'affichage
 function toggleFavorite(event) {
   const button = event.target;
-  const card = button.parentElement;
+  // console.log(button);
+  const card = button.parentNode.parentNode;
   // console.log(card);
   const hpCard = card.parentNode.parentNode;
   // console.log(hpCard);
+  const heart = button.parentNode;
+  // console.log(heart);
 
   // rajouter la class favorite
-  const isFavoriteHpCard = hpCard.classList.toggle("favorite");
-  const isFavoriteCard = card.classList.toggle("favorite");
-
+  hpCard.classList.toggle("favorite");
+  card.classList.toggle("favorite");
+  heart.classList.toggle("favorite");
   // Met à jour l'ordre des cartes en fonction des favoris
   updateCardsOrder();
 }
@@ -112,7 +121,7 @@ function updateCardsOrder() {
   const cardList = document.querySelector("#card-list");
   const cards = Array.from(cardList.querySelectorAll(".hp-card"));
   const favorites = cards.filter((card) => card.classList.contains("favorite"));
-  // console.log(favorites);
+  console.log(favorites);
   const nonFavorites = cards.filter(
     (card) => !card.classList.contains("favorite")
   );

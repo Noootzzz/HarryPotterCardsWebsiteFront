@@ -13,34 +13,51 @@
 }
 
 #home section #button {
-  padding: 10vh 0vh 0vh 0vh;
+  padding: 10vh 0vh 0vh;
 }
 
 #home section #button a {
   color: var(--dark-text);
-  padding: 1.5vh 5vh;
+  padding: var(--normal);
   margin-right: 3vw;
+  background-color: var(--white);
   border-radius: 5px;
-  transition: 0.2s;
+  border: var(--border-button-color);
+  transition: 0.3s;
+}
+
+#home section #button a:hover {
+  color: var(--white);
+  border: var(--border-button-white);
+  background-color: var(--primary-light);
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 #home section #button a:nth-child(1) {
-  box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
+  color: var(--white);
+  padding: var(--normal);
+  background-color: var(--primary);
+  border-radius: 5px;
+  border: var(--border-button-color);
+  transition: 0.3s;
 }
 
 #home section #button a:nth-child(1):hover {
-  box-shadow: 0px 0px 0px var(--white), 0px 0px 0px var(--grey);
-  transition: 0.2s;
-}
-
-#home section #button a:nth-child(2):hover {
-  box-shadow: inset -5px -5px 10px var(--white), inset 5px 5px 10px var(--grey);
-  transition: 0.2s;
+  color: var(--white);
+  border: var(--border-button-white);
+  background-color: var(--primary-light);
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 #home section h1 {
   margin: 5vh 0vh;
   font-size: 10vh;
+}
+
+#home section h1 span {
+  color: var(--primary);
 }
 
 #home section p {
@@ -50,4 +67,17 @@
 
 #home img {
   width: 20vw;
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }

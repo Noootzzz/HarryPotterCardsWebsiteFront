@@ -15,64 +15,90 @@
 }
 
 .modal-content {
-  background: var(--background);
-  padding: 20px;
+  background: var(--white);
+  padding: 2vh;
   border-radius: 5px;
-  text-align: center;
+  text-align: right;
 }
 
 #open-modal-btn {
   position: fixed;
-  right: 50px;
-  bottom: 50px;
-  padding: 3vh;
-  background: var(--background);
-  color: var(--violet2);
-  border: none;
-  cursor: pointer;
-  font-size: 1vw;
-  border-radius: 10px;
-  box-shadow: -4px -4px 10px var(--white), 4px 4px 10px var(--grey);
-  transition: 0.2s;
+  right: 15px;
+  bottom: 15px;
+  color: var(--white);
+  padding: 2.5vh 4vh;
+  background-color: var(--primary);
+  border-radius: 5px;
+  border: var(--border-button-color);
+  transition: 0.3s;
 }
 
 #open-modal-btn:hover {
-  background-color: var(--violet2);
-  color: var(--background);
+  color: var(--white);
+  border: var(--border-button-white);
+  background-color: var(--primary-light);
   cursor: pointer;
-  box-shadow: none;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 #close-modal-btn {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: var(--red);
+  padding: 1.5vh 3vh;
+  background: var(--error);
   color: var(--white);
   border: none;
   cursor: pointer;
-  font-size: 16px;
   border-radius: 5px;
 }
 
 #modal form {
   padding: 10vh;
+  text-align: left;
 }
 #modal form p {
   margin-bottom: 10px;
 }
 #modal form h2 {
-  margin-bottom: 40px;
+  margin-bottom: 6vh;
+  font-size: 3vh;
 }
 
 #modal form input {
+  border: 1px solid var(--black);
   margin-bottom: 20px;
   padding: 2vh 7vh;
+  border-radius: 5px;
+  color: var(--primary);
+  transition: 0.3s;
+}
+
+#modal form input:focus {
+  border: 1px solid var(--primary);
+  outline: none;
+  transition: 0.3s;
+}
+
+#modal span {
+  color: var(--primary);
 }
 
 #modal form input:focus::placeholder {
   opacity: 0;
+  transition: 0.3s;
 }
 #modal form input[type="submit"] {
-  border: none;
+  color: var(--white);
+  padding: 2.5vh 4vh;
+  background-color: var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
+  border: var(--border-button-color);
+  transition: 0.3s;
+}
+
+#modal form input[type="submit"]:hover {
+  color: var(--white);
+  border: var(--border-button-white);
+  background-color: var(--primary-light);
+  cursor: pointer;
+  transition: 0.3s;
 }

@@ -11,31 +11,6 @@
   --dark-text: #111;
 }
 
-.maison-btn,
-#reset {
-  background-color: var(--background);
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
-  padding: 1.5vh 3vh;
-  margin-right: 10px;
-}
-
-.maison-btn:hover,
-#reset:hover {
-  color: var(--violet1);
-  cursor: pointer;
-  box-shadow: none;
-}
-
-#maisons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 4vh 0vh;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -186,119 +161,7 @@ span {
 
 #cards-research {
   display: block;
-}
-
-main .research {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 30vh;
-}
-
-main .research h1 {
-  font-size: 6vh;
-}
-
-main ul li img {
-  /* width: 100px;
-  min-height: 200px; */
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* input[type="checkbox"] {
-    display: none;
-}
-
-.like-checkbox {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-image: url("../img/icon/coeur_black.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-input[type="checkbox"]:checked + .like-checkbox {
-    background-image: url("../img/icon/coeur_red.png");
-} */
-
-main ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-main ul li {
-  position: relative;
-  border-radius: 10px;
-  box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
-  width: 13vw;
-  min-height: 20vh;
-  margin: 5vh 10vh;
-  transition: 0.2s;
-}
-
-main ul li:hover {
-  box-shadow: none;
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-#cards-research #searchbar {
-  border: none;
-  background-color: var(--background);
-  padding: 10px 15px;
-  border-radius: 5px;
-  color: var(--violet2);
-  box-shadow: inset -5px -5px 10px var(--white), inset 5px 5px 10px var(--grey);
-  outline: none;
-}
-
-#cards-research #searchbar:focus::placeholder {
-  color: var(--violet1);
-  opacity: 0;
-}
-
-#card-view {
-  margin-top: 5vh;
-  width: 75vw;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#card-view img {
-  width: 30vw;
-  box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
-}
-
-#card-view h2 {
-  text-transform: uppercase;
-  font-size: 4vh;
-
-  color: var(--violet1);
-}
-#card-view p {
-  margin: 5px;
-  padding: 5px 15px;
-  border: 1px solid var(--violet1);
-  border-radius: 5px;
-}
-
-.hp-card {
-  text-align: center;
-  padding: 2vh;
-  display: block;
-}
-.hp-card.hidden {
-  display: none;
+  /* width: 80vw; */
 }
 
 #profil {
@@ -461,8 +324,8 @@ form input[type="submit"]:hover {
 
 #open-modal-btn {
   position: fixed;
-  right: 50px;
-  bottom: 50px;
+  right: 15px;
+  bottom: 15px;
   padding: 3vh;
   background: var(--background);
   color: var(--violet2);

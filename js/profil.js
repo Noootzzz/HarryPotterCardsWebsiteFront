@@ -60,7 +60,10 @@ const getMyProfile = async () => {
 
     // Sélectionner l'élément où afficher les cartes et ajouter la liste ul
     let cardsContainer = document.getElementById("list-card");
+    const title = document.createElement("h2");
     cardsContainer.innerHTML = ""; // Vider le contenu actuel
+    title.innerHTML = "My Cards";
+    cardsContainer.appendChild(title);
     cardsContainer.appendChild(cardList);
 
     // Retourner l'ID de l'utilisateur

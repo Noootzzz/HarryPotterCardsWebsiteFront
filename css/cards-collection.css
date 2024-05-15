@@ -1,0 +1,95 @@
+main ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0vw 5vw;
+}
+
+main ul li {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
+  width: 13vw;
+  min-height: 20vh;
+  margin: 5vh 7vh;
+  transition: 0.3s;
+}
+
+main ul li:hover {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#card-view {
+  margin-top: 5vh;
+  width: 75vw;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#card-view img {
+  width: 30vw;
+}
+
+#card-view h2 {
+  text-transform: uppercase;
+  font-size: 4vh;
+  color: var(--primary);
+}
+#card-view p {
+  margin: 5px;
+  padding: 5px 15px;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+}
+
+.hp-card {
+  text-align: center;
+  padding: 2vh;
+  display: block;
+  border: 2px solid var(--primary);
+}
+
+.hp-card.hidden {
+  display: none;
+}
+
+.hp-card a {
+  height: 25vh;
+  display: block;
+  overflow: hidden;
+}
+
+.hp-card a:hover img {
+  animation: wiggle 4s linear infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
