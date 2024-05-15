@@ -51,6 +51,9 @@ async function displayCharacters() {
     const h2 = document.createElement("h2");
     h2.textContent = character.name;
 
+    const p = document.createElement("p");
+    p.innerHTML = `House : ${character.house} </br> Actor : ${character.actor} </br> Role : ${character.role} `;
+
     const img = document.createElement("img");
     img.src = character.image;
     img.alt = character.name;
@@ -68,6 +71,7 @@ async function displayCharacters() {
     like.appendChild(favBtn);
 
     link.appendChild(h2);
+    link.appendChild(p);
     link.appendChild(img);
 
     listItem.appendChild(link);

@@ -43,7 +43,7 @@
 
 #close-modal-btn {
   padding: 1.5vh 3vh;
-  background: var(--error);
+  background-color: var(--red);
   color: var(--white);
   border: none;
   cursor: pointer;

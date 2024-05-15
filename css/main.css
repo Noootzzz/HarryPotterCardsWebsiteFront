@@ -5,12 +5,13 @@
 @import url(./home-main.css);
 @import url(./booster-openning.css);
 @import url(./modal.css);
-@import url(./open-booster.css);
 @import url(./filter.css);
 @import url(./favorite.css);
 @import url(./search.css);
 @import url(./cards-collection.css);
-
+@import url(./profile.css);
+@import url(./single-card-infos.css);
+@import url(./animations.css);
 * {
   margin: 0;
   padding: 0;
@@ -18,5 +19,6 @@
   list-style: none;
   text-decoration: none;
   font-size: var(--p);
+  font-weight: 600;
   font-family: var(--font-f);
 }

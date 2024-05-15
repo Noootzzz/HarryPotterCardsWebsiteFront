@@ -24,7 +24,14 @@
   border-radius: 5px;
   border: var(--border-button-color);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 0.3s;
+}
+
+.maison-btn img {
+  margin: 0px 5px 0px 0px;
 }
 
 .maison-btn:hover {

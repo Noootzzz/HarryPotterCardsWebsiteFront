@@ -13,14 +13,18 @@ async function displayCharacter() {
 
   document.querySelector("#card-view").innerHTML = `
         <h2>${data.slug}</h2>
-        <img src="${data.image}" alt="${data.name}">
-        <p>House : ${data.house}</p>
-        <p>Actor : ${data.actor}</p>
-        <p>Role : ${data.role}</p>
-        <p>Patronus : ${data.patronus}</p>
-        <p>Blood : ${data.blood}</p>
+        <div class="cards">
+          <img src="${data.image}" alt="${data.name}">
+          <div id="datas">
+            <p>House : <span>${data.house}</span></p>
+            <p>Actor : <span>${data.actor}</span></p>
+            <p>Role : <span>${data.role}</span></p>
+            <p>Patronus : <span>${data.patronus}</span></p>
+            <p>Blood : <span>${data.blood}</span></p>
+          </div>
+        </div>
+        
         <a href="details.html">Back</a>`;
-  // console.log(data.house);
 }
 //appel de la fonction
 displayCharacter();

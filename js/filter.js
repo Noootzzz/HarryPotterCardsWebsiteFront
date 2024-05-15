@@ -25,19 +25,19 @@ function updateCouleurs(maison = "") {
   const root = document.documentElement;
   switch (maison) {
     case "Gryffindor":
-      root.style.setProperty("--dark-text", "#af130f");
+      root.style.setProperty("--black-text", "#af130f");
       break;
     case "Slytherin":
-      root.style.setProperty("--dark-text", "#1a7219");
+      root.style.setProperty("--black-text", "#1a7219");
       break;
     case "Ravenclaw":
-      root.style.setProperty("--dark-text", "#0686ac");
+      root.style.setProperty("--black-text", "#0686ac");
       break;
     case "Hufflepuff":
-      root.style.setProperty("--dark-text", "#bf9307");
+      root.style.setProperty("--black-text", "#bf9307");
       break;
     default:
-      root.style.setProperty("--dark-text", "#000");
+      root.style.setProperty("--black-text", "#111");
       break;
   }
 }

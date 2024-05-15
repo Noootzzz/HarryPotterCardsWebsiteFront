@@ -12,10 +12,10 @@ const getMyProfile = async () => {
 
     // Mettre à jour les éléments dans le DOM avec les données récupérées
     let pseudo = document.getElementById("pseudo");
-    pseudo.innerHTML = data.user.name;
+    pseudo.innerHTML = `Pseudo : <span>${data.user.name}</span>`;
 
     let email = document.getElementById("email");
-    email.innerHTML = data.user.email;
+    email.innerHTML = `Email : <span>${data.user.email}</span>`;
 
     // Récupérer les id des cartes de l'utilisateur depuis la base de données
     const cardsIds = data.cards.map((card) => card.cardId);
@@ -47,11 +47,15 @@ const getMyProfile = async () => {
       const h2 = document.createElement("h2");
       h2.textContent = card.name;
 
+      const p = document.createElement("p");
+      p.innerHTML = `House : ${card.house} </br> Actor : ${card.actor} </br> Role : ${card.role} `;
+
       const img = document.createElement("img");
       img.src = card.image;
       img.alt = card.name;
 
       link.appendChild(h2);
+      link.appendChild(p);
       link.appendChild(img);
       listItem.appendChild(link);
 
@@ -61,10 +65,46 @@ const getMyProfile = async () => {
     // Sélectionner l'élément où afficher les cartes et ajouter la liste ul
     let cardsContainer = document.getElementById("list-card");
     const title = document.createElement("h2");
+    title.classList.add("my-cards");
     cardsContainer.innerHTML = ""; // Vider le contenu actuel
-    title.innerHTML = "My Cards";
+    title.innerHTML = "My <span>Cards</span>";
     cardsContainer.appendChild(title);
     cardsContainer.appendChild(cardList);
+
+    let numberCards = document.createElement("h2");
+    numberCards.classList.add("number-cards");
+    numberCards.innerHTML = `Cards in my</br> collection : <span>${data.cards.length}</span> / ${allCards.length}`;
+    let stats = document.getElementById("stats");
+    stats.appendChild(numberCards);
+
+    let favoriteHouse = document.createElement("h2");
+
+    //stocker le nombre de cartes par maison
+    const cardsByHouse = {};
+
+    //les compter
+    userCards.forEach((card) => {
+      if (!cardsByHouse[card.house]) {
+        cardsByHouse[card.house] = 1;
+      } else {
+        cardsByHouse[card.house]++;
+      }
+    });
+    console.log(cardsByHouse);
+
+    //trouver la maison avec le plus grand nbr de cartes
+    let favHouse = "";
+    let maxCards = 0;
+    Object.entries(cardsByHouse).forEach(([house, count]) => {
+      if (count > maxCards) {
+        favHouse = house;
+        maxCards = count;
+      }
+    });
+
+    favoriteHouse.classList.add("favorite-house");
+    favoriteHouse.innerHTML = `Favorite House : <span>${favHouse}</span>`;
+    stats.appendChild(favoriteHouse);
 
     // Retourner l'ID de l'utilisateur
     return data.user.id;

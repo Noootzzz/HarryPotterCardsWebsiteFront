@@ -1,3 +1,7 @@
+main h1 {
+  color: var(--black-text);
+}
+
 main ul {
   display: flex;
   flex-direction: row;
@@ -9,7 +13,6 @@ main ul {
 main ul li {
   position: relative;
   border-radius: 10px;
-  box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
   width: 13vw;
   min-height: 20vh;
   margin: 5vh 7vh;
@@ -19,32 +22,6 @@ main ul li {
 main ul li:hover {
   transition: 0.3s;
   cursor: pointer;
-}
-
-#card-view {
-  margin-top: 5vh;
-  width: 75vw;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#card-view img {
-  width: 30vw;
-}
-
-#card-view h2 {
-  text-transform: uppercase;
-  font-size: 4vh;
-  color: var(--primary);
-}
-#card-view p {
-  margin: 5px;
-  padding: 5px 15px;
-  border: 1px solid var(--primary);
-  border-radius: 5px;
 }
 
 .hp-card {
@@ -59,13 +36,26 @@ main ul li:hover {
 }
 
 .hp-card a {
+  text-align: left;
   height: 25vh;
   display: block;
+  text-decoration: none;
   overflow: hidden;
 }
 
 .hp-card a:hover img {
   animation: wiggle 4s linear infinite;
+}
+
+.hp-card a h2 {
+  font-size: 1.9vh;
+  color: var(--primary) !important;
+}
+
+.hp-card p {
+  text-align: left;
+  font-weight: 400;
+  color: var(--black);
 }
 
 @keyframes wiggle {

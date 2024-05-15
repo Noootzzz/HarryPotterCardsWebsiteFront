@@ -9,11 +9,11 @@
   /* COLORS */
   --white: #ffffff;
   --black: #121212;
+  --black-text: #111;
   --light-black: #1d1d1d;
 
   --primary: #5628ee;
   --primary-light: #8c6ff0;
-  --secondary: #23c4f8;
 
   --success: #57ca81;
   --error: #d04863;
@@ -38,4 +38,9 @@
   /* border */
   --border-button-color: 1px solid var(--primary);
   --border-button-white: 1px solid var(--primary-light);
+}
+
+.darkmode {
+  --white: #121212;
+  --black: #ffffff;
 }
