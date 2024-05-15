@@ -53,6 +53,7 @@
   max-height: 60vh;
   width: 55vw;
   margin: 0vh 0vh 15vh 0vh;
+
   /* overflow-y: scroll;
   overflow-x: hidden; */
 
@@ -61,7 +62,7 @@
 }
 
 #booster-cards-container h2 {
-  text-align: center;
+  text-align: left;
 }
 
 #booster-cards-container .card-list {

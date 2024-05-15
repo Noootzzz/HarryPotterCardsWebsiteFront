@@ -82,11 +82,15 @@ function displayCards(cards) {
     const h2 = document.createElement("h2");
     h2.textContent = card.name;
 
+    const p = document.createElement("p");
+    p.innerHTML = `House : ${card.house} </br> Actor : ${card.actor} </br> Role : ${card.role} `;
+
     const img = document.createElement("img");
     img.src = card.image;
     img.alt = card.name;
 
     link.appendChild(h2);
+    link.appendChild(p);
     link.appendChild(img);
     listItem.appendChild(link);
 

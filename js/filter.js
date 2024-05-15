@@ -23,6 +23,7 @@ function filterCartes(maison) {
 
 function updateCouleurs(maison = "") {
   const root = document.documentElement;
+  const darkmode = document.documentElement.getElementsByClassName("darkmode");
   switch (maison) {
     case "Gryffindor":
       root.style.setProperty("--black-text", "#af130f");

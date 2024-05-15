@@ -54,6 +54,7 @@
 #home section h1 {
   margin: 5vh 0vh;
   font-size: 10vh;
+  color: var(--black);
 }
 
 #home section h1 span {
