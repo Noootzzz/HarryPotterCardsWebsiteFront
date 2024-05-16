@@ -6,21 +6,17 @@ formulaire.addEventListener("submit", async (event) => {
   const email = document.getElementById("reg-email").value;
   const password = document.getElementById("reg-psw").value;
 
-  const response = await fetch("http://localhost:3000/users", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ name, email, password }),
-  });
+  try {
+    const response = await fetch("http://localhost:3000/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, password }),
+    });
 
-  const data = await response.json();
-
-  if (data) {
-    window.location.href = "login.html";
-    alert("Inscritpion réussi, maintenant connectez-vous.");
-  }
-  if (!data) {
-    alert("Erreur d'inscription.");
+    const data = await response.json();
+  } catch (error) {
+    alert("Register error.");
   }
 });

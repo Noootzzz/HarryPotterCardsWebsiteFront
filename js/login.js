@@ -5,26 +5,27 @@ formulaire.addEventListener("submit", async (event) => {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-  const response = await fetch("http://localhost:3000/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ email, password }),
-  });
+  try {
+    const response = await fetch("http://localhost:3000/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, password }),
+    });
 
-  const data = await response.json();
+    const data = await response.json();
 
-  const token = data.token;
+    const token = data.token;
 
-  if (token) {
-    localStorage.setItem("token", token);
-    window.location.href = "index.html";
-    alert("Connecté avec l'adresse e-mail : " + email);
-  }
-  if (!token) {
-    alert(
-      "Erreur de connexion. Veuillez vérifier votre identifiant et mot de passe."
-    );
+    if (token) {
+      localStorage.setItem("token", token);
+      alert("You are now connected with : " + email);
+      window.location.href = "index.html";
+    } else {
+      throw new Error("Error Token");
+    }
+  } catch (error) {
+    alert("Login error. Please check your email and password.");
   }
 });

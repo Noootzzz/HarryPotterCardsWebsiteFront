@@ -61,7 +61,16 @@
         ></path>
       </g>
     </svg>
+
     <main id="register">
+      <div class="message-error">
+        <ul></ul>
+      </div>
+      <div class="message-success">
+        <ul>
+          <li>Formulaire envoyé</li>
+        </ul>
+      </div>
       <form method="POST" id="reg-form">
         <h2>Register</h2>
         <div class="form">
@@ -78,6 +87,14 @@
             <input
               type="password"
               id="reg-psw"
+              placeholder=". . . . . . . . . . . ."
+            />
+          </div>
+          <div class="reg-psw">
+            <p>Confirm Your Password</p>
+            <input
+              type="password"
+              id="reg-psw-verif"
               placeholder=". . . . . . . . . . . ."
             />
           </div>
@@ -101,6 +118,7 @@
 
     <script src="./js/sidenav.js"></script>
     <script src="./js/register.js"></script>
+    <script src="./js/valid_form_register.js"></script>
     <script src="./js/darkmode.js"></script>
   </body>
 </html>
