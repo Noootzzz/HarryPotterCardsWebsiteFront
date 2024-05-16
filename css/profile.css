@@ -70,8 +70,8 @@
   padding: 2vh;
 }
 
-#profil img {
-  width: 100%;
+#profil #profile img {
+  width: 20%;
 }
 #profil img:nth-child(1) {
   width: 13vw;

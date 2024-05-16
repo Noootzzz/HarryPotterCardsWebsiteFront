@@ -44,7 +44,8 @@ header nav li a:hover {
   transition: 0.3s;
 }
 
-header button {
+header button,
+.sidenav button {
   color: var(--white);
   padding: var(--normal);
   background-color: var(--primary);
@@ -53,7 +54,8 @@ header button {
   transition: 0.3s;
 }
 
-header button:hover {
+header button:hover,
+.sidenav button:hover {
   color: var(--white);
   border: var(--border-button-white);
   background-color: var(--primary-light);
@@ -84,10 +86,6 @@ header button:hover {
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: var(--white);
-}
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -98,5 +96,9 @@ header button:hover {
 
 #burger {
   width: 20%;
+  display: none;
+}
+#SVGRepo_iconCarrier path {
+  stroke: var(--black);
   display: none;
 }

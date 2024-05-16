@@ -73,7 +73,7 @@ const getMyProfile = async () => {
 
     let numberCards = document.createElement("h2");
     numberCards.classList.add("number-cards");
-    numberCards.innerHTML = `Cards in my</br> collection : <span>${data.cards.length}</span> / ${allCards.length}`;
+    numberCards.innerHTML = `Cards in my collection :</br> <span>${data.cards.length}</span> / ${allCards.length}`;
     let stats = document.getElementById("stats");
     stats.appendChild(numberCards);
 
@@ -103,7 +103,7 @@ const getMyProfile = async () => {
     });
 
     favoriteHouse.classList.add("favorite-house");
-    favoriteHouse.innerHTML = `Favorite House : <span>${favHouse}</span>`;
+    favoriteHouse.innerHTML = `Favorite House :  <span>${favHouse}</span>`;
     stats.appendChild(favoriteHouse);
 
     // Retourner l'ID de l'utilisateur

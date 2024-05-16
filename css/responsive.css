@@ -10,6 +10,9 @@
   .sidenav {
     display: block;
   }
+  #SVGRepo_iconCarrier path {
+    display: block;
+  }
   /* HOME */
   #home img:nth-child(1) {
     width: 0%;
@@ -72,8 +75,17 @@
   #booster-cards-container .card-list {
     margin: 0;
   }
-  #booster-cards-container .hp-card a {
+  #booster-cards-container .card-list .hp-card {
+    height: 35vh !important;
+  }
+  #booster-cards-container .card-list li {
     height: 20vh;
+  }
+  #booster-cards-container .hp-card a {
+    height: 25vh !important;
+  }
+  #booster-cards-container .hp-card img {
+    width: 100% !important;
   }
   /* DETAILS */
   main .research {
@@ -106,21 +118,6 @@
   main ul li a {
     height: 25vh !important;
   }
-  #profil {
-    margin-top: 0px;
-  }
-
-  #profil .pseudo h1 {
-    font-size: 4vh;
-  }
-  /* 
-  #register form {
-    font-size: 3vh;
-    box-shadow: none;
-  }
-  #register form h2 {
-    font-size: 5vh;
-  } */
 
   #card-view {
     flex-direction: column;
@@ -142,7 +139,47 @@
     padding: 1vh 2vh;
   }
   /* PROFILE */
-
+  #profil {
+    margin-top: 0px;
+    overflow-x: hidden;
+    padding: 0;
+  }
+  #profil #infos {
+    display: grid;
+    place-items: center;
+  }
+  #profil #infos h2 {
+    text-align: center;
+    margin: 0;
+  }
+  #profil #infos #my-profile {
+    border-bottom: 2px solid var(--primary);
+    border-radius: 0px;
+    margin: 0 0 4vh 0;
+  }
+  #profil #profile {
+    display: block;
+    margin: 2vh 0 0 0;
+    text-align: center;
+  }
+  #profil #profile #stats {
+    /* border-top: 2px solid var(--primary); */
+    border: none;
+    text-align: center;
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+  #stats {
+    display: grid;
+    place-items: center;
+  }
+  #profil #profile h2 {
+    font-size: 4vh;
+    border: none;
+  }
+  #profil #profile img {
+    display: none;
+  }
   /* MODAL */
   #open-modal-btn {
     right: 5px;
@@ -170,5 +207,17 @@
   #close-modal-btn {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  /* REGISTER/LOGIN */
+  #register {
+    padding: 0;
+  }
+  #register form {
+    border: none !important;
+    width: 100% !important;
+  }
+  #register form a {
+    margin: 2vh 0 2vh 0;
   }
 }
