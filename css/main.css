@@ -13,6 +13,7 @@
 @import url(./single-card-infos.css);
 @import url(./login.css);
 @import url(./animations.css);
+@import url(./responsive.css);
 * {
   margin: 0;
   padding: 0;
