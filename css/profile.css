@@ -115,3 +115,29 @@
 #list-card .my-cards {
   font-size: 4vh;
 }
+
+.collection h1 {
+  color: var(--black-text);
+}
+
+.collection ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0vw 5vw;
+}
+
+.collection ul li {
+  position: relative;
+  border-radius: 10px;
+  width: 13vw;
+  min-height: 20vh;
+  margin: 5vh 7vh;
+  transition: 0.3s;
+}
+
+.collection ul li:hover {
+  transition: 0.3s;
+  cursor: pointer;
+}

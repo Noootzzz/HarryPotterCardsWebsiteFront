@@ -5,17 +5,6 @@
   margin: 4vh 0vh;
 }
 
-/* .maison-btn,
-#reset {
-  background-color: var(--background);
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  box-shadow: -5px -5px 10px var(--white), 5px 5px 10px var(--grey);
-  padding: 1.5vh 3vh;
-  margin-right: 10px;
-} */
-
 .maison-btn {
   color: var(--dark-text);
   padding: var(--normal);

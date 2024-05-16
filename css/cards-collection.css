@@ -1,8 +1,8 @@
-main h1 {
+#cards-research h1 {
   color: var(--black-text);
 }
 
-main ul {
+#cards-research ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -10,7 +10,7 @@ main ul {
   padding: 0vw 5vw;
 }
 
-main ul li {
+#cards-research ul li {
   position: relative;
   border-radius: 10px;
   width: 13vw;
@@ -19,7 +19,7 @@ main ul li {
   transition: 0.3s;
 }
 
-main ul li:hover {
+#cards-research ul li:hover {
   transition: 0.3s;
   cursor: pointer;
 }

@@ -112,8 +112,8 @@
     margin-bottom: 45px;
   }
   main ul li {
-    width: 60vw;
-    margin: 3vh 4vh;
+    width: 60vw !important;
+    margin: 3vh 4vh !important;
   }
   main ul li a {
     height: 25vh !important;
@@ -147,6 +147,7 @@
   #profil #infos {
     display: grid;
     place-items: center;
+    border: none;
   }
   #profil #infos h2 {
     text-align: center;

@@ -98,6 +98,10 @@ header button:hover,
   width: 20%;
   display: none;
 }
+
+#svg {
+  display: none;
+}
 #SVGRepo_iconCarrier path {
   stroke: var(--black);
   display: none;
