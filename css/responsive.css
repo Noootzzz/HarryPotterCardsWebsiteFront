@@ -10,6 +10,9 @@
   .sidenav {
     display: block;
   }
+  #svg {
+    display: block;
+  }
   #SVGRepo_iconCarrier path {
     display: block;
   }

@@ -67,9 +67,9 @@ function displayCards(cards) {
   const cardList = document.createElement("ul"); //liste des cartes
   cardList.classList.add("card-list");
 
-  const title = document.createElement("h2");
-  title.innerHTML = "You got these cards :";
-  cardsContainer.appendChild(title);
+  // const title = document.createElement("h2");
+  // title.innerHTML = "You got these cards :";
+  // cardsContainer.appendChild(title);
 
   cards.forEach((card) => {
     const listItem = document.createElement("li");

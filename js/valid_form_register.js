@@ -22,7 +22,7 @@ form.addEventListener("submit", (event) => {
     pseudo.classList.remove("success");
     pseudo.classList.add("error");
     let err = document.createElement("li");
-    err.innerHTML = "Le pseudo doit faire au moins 6 caractères";
+    err.innerHTML = "The pseudo must be at least 6 characters long.";
     errorList.appendChild(err);
   } else {
     // console.log("valide")
@@ -38,7 +38,7 @@ form.addEventListener("submit", (event) => {
     email.classList.remove("success");
     email.classList.add("error");
     let err = document.createElement("li");
-    err.innerHTML = "Le champ email ne peut pas être vide";
+    err.innerHTML = "The email field cannot be empty.";
     errorList.appendChild(err);
   } else {
     // console.log("valide")
@@ -61,7 +61,7 @@ form.addEventListener("submit", (event) => {
     password.classList.add("error");
     let err = document.createElement("li");
     err.innerHTML =
-      "Le mot de passe doit faire 10 caractères minimum, contenir, minuscule, majuscule, chiffre, caractère spécial";
+      "The password must be at least 10 characters long, contain : lowercase, uppercase, number, special character.";
     errorList.appendChild(err);
   } else {
     // console.log("valide")
@@ -77,7 +77,7 @@ form.addEventListener("submit", (event) => {
     passwordRepeat.classList.remove("success");
     passwordRepeat.classList.add("error");
     let err = document.createElement("li");
-    err.innerHTML = "Les mots de passes sont différents";
+    err.innerHTML = "Passwords are different.";
     errorList.appendChild(err);
   } else {
     // console.log("valide")
