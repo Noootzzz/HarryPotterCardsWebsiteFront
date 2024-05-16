@@ -30,20 +30,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  border-left: 2px solid var(--primary);
 }
 
 #infos #pseudo,
 #infos #email {
   margin-top: 4vh;
   font-size: 3.5vh;
-  border: 2px solid var(--primary);
+  /* border: 2px solid var(--primary); */
   border-radius: 5px;
   padding: 2vh;
 }
 
 #my-profile {
   font-size: 10vh;
-  border: 2px solid var(--primary);
+  /* border: 2px solid var(--primary); */
   border-radius: 5px;
   padding: 2vh;
 }

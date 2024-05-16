@@ -220,4 +220,26 @@
   #register form a {
     margin: 2vh 0 2vh 0;
   }
+  /* FOOTER */
+  footer {
+    margin-top: 5vh;
+  }
+  #home-footer {
+    margin-top: 140vh;
+  }
+  footer .footer-content {
+    flex-direction: column;
+    padding-bottom: 5vh;
+  }
+  footer .legal-links {
+    border-bottom: 2px solid var(--primary) !important;
+    border-top: 2px solid var(--primary) !important;
+  }
+  footer .legal-links a {
+    border: none !important;
+    padding: 1vh 0;
+  }
+  footer .footer-content p {
+    padding: 2vh 0;
+  }
 }
