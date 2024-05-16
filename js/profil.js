@@ -10,31 +10,29 @@ const getMyProfile = async () => {
 
     const data = await response.json();
 
-    // Mettre à jour les éléments dans le DOM avec les données récupérées
+    //maj du DOM
     let pseudo = document.getElementById("pseudo");
     pseudo.innerHTML = `Pseudo : <span>${data.user.name}</span>`;
 
     let email = document.getElementById("email");
     email.innerHTML = `Email : <span>${data.user.email}</span>`;
 
-    // Récupérer les id des cartes de l'utilisateur depuis la base de données
+    //recup les id des cartes de l'utilisateur depuis la base de donnees
     const cardsIds = data.cards.map((card) => card.cardId);
     // console.log("Cartes de l'utilisateur depuis la base de données:", cardsIds);
 
-    // Récupérer toutes les cartes depuis l'API
+    //recup toutes les cartes depuis l'API
     const responseApi = await fetch("https://hp-api.lainocs.fr/characters");
     const allCards = await responseApi.json();
     // console.log("Cartes de l'API:", allCards);
 
-    // Filtrer les cartes de l'utilisateur parmi toutes les cartes récupérées depuis l'API
+    //filtrer les cartes de l'utilisateur parmi toutes les cartes prises depuis l'API
     const userCards = allCards.filter((card) => cardsIds.includes(card.id));
     // console.log("Carte de l'user après filtre de l'api : ", userCards);
 
-    // Créer une liste ul pour les cartes de l'utilisateur
     let cardList = document.createElement("ul");
     cardList.classList.add("card-list");
 
-    // Pour chaque carte de l'utilisateur depuis l'API, créer un élément li et l'ajouter à la liste ul
     userCards.forEach((card) => {
       const listItem = document.createElement("li");
       listItem.classList.add("hp-card");
@@ -48,7 +46,9 @@ const getMyProfile = async () => {
       h2.textContent = card.name;
 
       const p = document.createElement("p");
-      p.innerHTML = `House : ${card.house} </br> Actor : ${card.actor} </br> Role : ${card.role} `;
+      p.innerHTML = `House : ${card.house || "No Data"} </br> Actor : ${
+        card.actor || "No Data"
+      } </br> Role : ${card.role || "No Data"} `;
 
       const img = document.createElement("img");
       img.src = card.image;
@@ -103,10 +103,12 @@ const getMyProfile = async () => {
     });
 
     favoriteHouse.classList.add("favorite-house");
-    favoriteHouse.innerHTML = `Favorite House :  <span>${favHouse}</span>`;
+    favoriteHouse.innerHTML = `Favorite House : <span>${
+      favHouse || "?"
+    }</span> `;
     stats.appendChild(favoriteHouse);
 
-    // Retourner l'ID de l'utilisateur
+    //id user
     // console.log(data.user.id);
     return data.user.id;
   } catch (error) {

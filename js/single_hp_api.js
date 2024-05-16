@@ -16,11 +16,11 @@ async function displayCharacter() {
         <div class="cards">
           <img src="${data.image}" alt="${data.name}">
           <div id="datas">
-            <p>House : <span>${data.house}</span></p>
-            <p>Actor : <span>${data.actor}</span></p>
-            <p>Role : <span>${data.role}</span></p>
-            <p>Patronus : <span>${data.patronus}</span></p>
-            <p>Blood : <span>${data.blood}</span></p>
+            <p>House : <span>${data.house || "No Data"}</span></p>
+            <p>Actor : <span>${data.actor || "No Data"}</span></p>
+            <p>Role : <span>${data.role || "No Data"}</span></p>
+            <p>Patronus : <span>${data.patronus || "No Data"}</span></p>
+            <p>Blood : <span>${data.blood || "No Data"}</span></p>
           </div>
         </div>
         

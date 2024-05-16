@@ -95,6 +95,6 @@ form.addEventListener("submit", (event) => {
     passwordRepeat.classList.contains("success")
   ) {
     successContainer.classList.add("visible");
-    window.location.href = "index.html";
+    window.location.href = "login.html";
   }
 });

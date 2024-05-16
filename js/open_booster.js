@@ -10,11 +10,10 @@ drawButton.addEventListener("click", async () => {
   //24 * 60 * 60 * 1000; // 24 heures en millisecondes
 
   if (lastOpenedTime && currentTime - parseInt(lastOpenedTime) < maxTime) {
-    // if (false) {
-    // Si moins de 24 heures se sont écoulées depuis la dernière ouverture, afficher un message d'alerte
+    //si -24
     alert("Vous ne pouvez ouvrir un booster qu'une fois toutes les 24 heures.");
   } else {
-    // Si 24 heures se sont écoulées ou si c'est la première ouverture, procéder à l'ouverture du booster
+    //si +24 ou premiere ouverture
     const cards = await drawRandomCards(5);
     displayCards(cards);
 
@@ -26,7 +25,7 @@ drawButton.addEventListener("click", async () => {
     });
     const dataUser = await response.json();
     // console.log(dataUser);
-    const id = dataUser.user.id; //id de l'user connecté dataUser.id
+    const id = dataUser.user.id; //id de l'user connecté
     // console.log(id);
 
     const idCards = cards.map((card) => card.id);
@@ -38,14 +37,13 @@ drawButton.addEventListener("click", async () => {
       body: JSON.stringify({ id, idCards }),
     });
 
-    // Mettre à jour le temps de la dernière ouverture du booster dans le localStorage
+    //maj temps de la derniere ouverture du booster dans le localStorage
     localStorage.setItem("lastOpenedTime", currentTime.toString());
   }
 });
 
-// Récupérer des cartes aléatoires dans l'API
-let availableCards = []; // Garder la trace des cartes disponibles
-
+//recup cartes aléatoire dans l'api
+let availableCards = [];
 async function drawRandomCards(numCards) {
   if (availableCards.length === 0) {
     const response = await fetch("https://hp-api.lainocs.fr/characters");
@@ -54,19 +52,19 @@ async function drawRandomCards(numCards) {
 
   const randomCards = [];
   for (let i = 0; i < numCards; i++) {
-    if (availableCards.length === 0) break; // Si aucune carte n'est disponible, sortir de la boucle
+    if (availableCards.length === 0) break; //si pas dartes break
     const randomIndex = Math.floor(Math.random() * availableCards.length);
     const selectedCard = availableCards[randomIndex];
     randomCards.push(selectedCard);
-    availableCards.splice(randomIndex, 1); // Retirer la carte sélectionnée du tableau des cartes disponibles
+    availableCards.splice(randomIndex, 1); //retirer la carte selectionnee du tableau des cartes disponibles
   }
   return randomCards;
 }
 
-// Affiche les cartes tirées au sort
+//afficher les cartes choisis aleatoirement
 function displayCards(cards) {
   cardsContainer.innerHTML = "";
-  const cardList = document.createElement("ul"); // Liste des cartes
+  const cardList = document.createElement("ul"); //liste des cartes
   cardList.classList.add("card-list");
 
   const title = document.createElement("h2");
@@ -86,7 +84,9 @@ function displayCards(cards) {
     h2.textContent = card.name;
 
     const p = document.createElement("p");
-    p.innerHTML = `House : ${card.house} </br> Actor : ${card.actor} </br> Role : ${card.role} `;
+    p.innerHTML = `House : ${card.house || "No Data"} </br> Actor : ${
+      card.actor || "No Data"
+    } </br> Role : ${card.role || "No Data"} `;
 
     const img = document.createElement("img");
     img.src = card.image;

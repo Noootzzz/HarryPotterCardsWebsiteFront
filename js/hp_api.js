@@ -1,4 +1,4 @@
-// fonction fetch qui recupere les informations
+//fonction fetch qui recupere les informations
 function fetchCharacters() {
   return fetch("https://hp-api.lainocs.fr/characters").then((response) =>
     response.json()
@@ -29,7 +29,7 @@ function fetchCharacters() {
 //   return data;
 // }
 
-// Fonction pour afficher les cartes des personnages dans le DOM
+//afficher les cartes des personnages dans le DOM
 async function displayCharacters() {
   const characters = await fetchCharacters();
   const cardList = document.querySelector("#card-list");
@@ -80,7 +80,7 @@ async function displayCharacters() {
   });
 }
 
-// fonction pour filtrer les cartes en fonction de la recherche
+//fonction pour filtrer les cartes en fonction de la recherche
 function filterCards(searchValue) {
   const cards = document.querySelectorAll("#card-list .hp-card");
   cards.forEach((card) => {
@@ -93,7 +93,7 @@ function filterCards(searchValue) {
   });
 }
 
-// événement de recherche
+//evenement de recherche
 const searchInput = document.querySelector("#searchbar");
 searchInput.addEventListener("input", (e) => {
   const searchValue = e.target.value.trim().toLowerCase();
@@ -101,7 +101,6 @@ searchInput.addEventListener("input", (e) => {
 });
 
 //favoris
-// Fonction pour basculer l'état du favori et mettre à jour l'affichage
 function toggleFavorite(event) {
   const button = event.target;
   // console.log(button);
@@ -116,11 +115,11 @@ function toggleFavorite(event) {
   hpCard.classList.toggle("favorite");
   card.classList.toggle("favorite");
   heart.classList.toggle("favorite");
-  // Met à jour l'ordre des cartes en fonction des favoris
+  //maj ordre des cartes en fonction des favoris
   updateCardsOrder();
 }
 
-// Fonction pour mettre à jour l'ordre des cartes en fonction des favoris
+//maj ordre des cartes en fonction des favoris
 function updateCardsOrder() {
   const cardList = document.querySelector("#card-list");
   const cards = Array.from(cardList.querySelectorAll(".hp-card"));
