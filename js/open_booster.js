@@ -6,10 +6,11 @@ drawButton.addEventListener("click", async () => {
   // Vérifier le temps de la dernière ouverture du booster
   const lastOpenedTime = localStorage.getItem("lastOpenedTime");
   const currentTime = new Date().getTime();
-  const maxTime = 24 * 60 * 60 * 1000; // 24 heures en millisecondes
+  const maxTime = 0; //ouvrir à l'infinit
+  //24 * 60 * 60 * 1000; // 24 heures en millisecondes
 
-  // if (lastOpenedTime && currentTime - parseInt(lastOpenedTime) < maxTime) {
-  if (false) {
+  if (lastOpenedTime && currentTime - parseInt(lastOpenedTime) < maxTime) {
+    // if (false) {
     // Si moins de 24 heures se sont écoulées depuis la dernière ouverture, afficher un message d'alerte
     alert("Vous ne pouvez ouvrir un booster qu'une fois toutes les 24 heures.");
   } else {
@@ -24,7 +25,9 @@ drawButton.addEventListener("click", async () => {
       },
     });
     const dataUser = await response.json();
-    const id = dataUser.id; //id de l'user connecté
+    // console.log(dataUser);
+    const id = dataUser.user.id; //id de l'user connecté dataUser.id
+    // console.log(id);
 
     const idCards = cards.map((card) => card.id);
     await fetch("http://localhost:3000/cards", {

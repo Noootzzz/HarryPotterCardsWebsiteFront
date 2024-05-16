@@ -107,6 +107,7 @@ const getMyProfile = async () => {
     stats.appendChild(favoriteHouse);
 
     // Retourner l'ID de l'utilisateur
+    // console.log(data.user.id);
     return data.user.id;
   } catch (error) {
     console.log("Une erreur s'est produite:", error);

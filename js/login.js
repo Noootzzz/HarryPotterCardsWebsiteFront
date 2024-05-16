@@ -19,7 +19,7 @@ formulaire.addEventListener("submit", async (event) => {
 
   if (token) {
     localStorage.setItem("token", token);
-    window.location.href = "profil.html";
+    window.location.href = "index.html";
     alert("Connecté avec l'adresse e-mail : " + email);
   }
   if (!token) {
