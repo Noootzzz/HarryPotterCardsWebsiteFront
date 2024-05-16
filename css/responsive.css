@@ -10,6 +10,7 @@
   .sidenav {
     display: block;
   }
+  /* HOME */
   #home img:nth-child(1) {
     width: 0%;
   }
@@ -71,9 +72,78 @@
   #booster-cards-container .card-list {
     margin: 0;
   }
-  .hp-card a {
+  #booster-cards-container .hp-card a {
     height: 20vh;
   }
+  /* DETAILS */
+  main .research {
+    margin: 0;
+    text-align: center;
+  }
+
+  #cards-research #burger {
+    width: 20%;
+  }
+  #cards-research h1 {
+    font-size: 5vh;
+    margin: 15px;
+  }
+  #maisons {
+    flex-wrap: wrap;
+  }
+  .maison-btn,
+  #reset {
+    padding: 1vh;
+    margin: 20px;
+  }
+  #card-list {
+    margin-bottom: 45px;
+  }
+  main ul li {
+    width: 60vw;
+    margin: 3vh 4vh;
+  }
+  main ul li a {
+    height: 25vh !important;
+  }
+  #profil {
+    margin-top: 0px;
+  }
+
+  #profil .pseudo h1 {
+    font-size: 4vh;
+  }
+  /* 
+  #register form {
+    font-size: 3vh;
+    box-shadow: none;
+  }
+  #register form h2 {
+    font-size: 5vh;
+  } */
+
+  #card-view {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 95vw;
+  }
+  #card-view img {
+    width: 50%;
+  }
+  #card-view h2 {
+    letter-spacing: 0;
+    margin: 0 0 2vh 0;
+  }
+  #card-view div {
+    padding: 0 2vh;
+  }
+  #card-view p {
+    padding: 1vh 2vh;
+  }
+  /* PROFILE */
+
+  /* MODAL */
   #open-modal-btn {
     right: 5px;
     bottom: 5px;
@@ -100,64 +170,5 @@
   #close-modal-btn {
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-
-  #cards-research #burger {
-    width: 20%;
-  }
-  #cards-research h1 {
-    font-size: 5vh;
-    margin: 15px;
-  }
-  #maisons {
-    display: block;
-  }
-  .maison-btn,
-  #reset {
-    padding: 1vh;
-    margin: 20px;
-  }
-  #card-list {
-    margin-bottom: 45px;
-  }
-  main ul li {
-    width: 20vw;
-    margin: 3vh 4vh;
-  }
-
-  #profil {
-    margin-top: 0px;
-  }
-  #profil .pseudo h1 {
-    font-size: 4vh;
-  }
-  /* #profil #burger {
-    width: 20%;
-  }
-  #burger {
-    width: 20%;
-  } */
-
-  #register form {
-    font-size: 3vh;
-    box-shadow: none;
-  }
-  #register form h2 {
-    font-size: 5vh;
-  }
-
-  #card-view {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 95vw;
-  }
-  #card-view img {
-    width: 50%;
-    margin-bottom: 10px;
-  }
-  #card-view h3 {
-    margin-bottom: 5px;
-    text-align: center;
   }
 }

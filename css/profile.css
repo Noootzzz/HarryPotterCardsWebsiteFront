@@ -71,6 +71,9 @@
 }
 
 #profil img {
+  width: 100%;
+}
+#profil img:nth-child(1) {
   width: 13vw;
 }
 
