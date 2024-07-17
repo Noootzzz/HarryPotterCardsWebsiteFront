@@ -43,6 +43,10 @@
   overflow: hidden;
 }
 
+.hp-card a img {
+  aspect-ratio: 1;
+}
+
 .hp-card a:hover img {
   animation: wiggle 4s linear infinite;
 }

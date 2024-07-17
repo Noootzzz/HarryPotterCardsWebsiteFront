@@ -1,7 +1,8 @@
 /* Samsung galaxy ultra s20 */
 
-@media (max-width: 412px) {
+@media (max-width: 500px) {
   body {
+    overflow-x: hidden;
     padding: 0vw;
   }
   header {
