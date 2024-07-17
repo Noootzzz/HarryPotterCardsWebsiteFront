@@ -5,6 +5,7 @@ footer {
   text-align: center;
   border-top: 2px solid var(--primary);
   margin-top: 5vh;
+  width: 100%;
 }
 .footer-content {
   display: flex;
